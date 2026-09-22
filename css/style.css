@@ -98,6 +98,15 @@ body {
     margin-inline: var(--spacing-md);
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: var(--primary-green);
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
 /* ==========================================================
    Slider Section
    ========================================================== */
@@ -221,4 +230,20 @@ body {
 
 .slider input[value="tolga"]:checked ~ .slider-wrapper {
     transform: translateX(calc(-100% / 3));
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    height: 90px;
+    background-color: var(--primary-yellow);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 24px 25px;
+}
+
+footer img {
+    width: 32px;
 }
