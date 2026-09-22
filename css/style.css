@@ -4,56 +4,68 @@
 
 /* arima-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Arima";
     font-style: normal;
     font-weight: 400;
-    src: url("/assets/fonts/arima-v7-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/assets/fonts/arima-v7-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* arima-700 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Arima";
     font-style: normal;
     font-weight: 700;
-    src: url("/assets/fonts/arima-v7-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/assets/fonts/arima-v7-latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-dark-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin Dark';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-dark-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin Dark';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/palanquin-dark-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/palanquin-dark-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 700;
-  src: url('assets/fonts/palanquin-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
@@ -97,6 +109,72 @@ html {
 body {
     margin-inline: var(--spacing-md);
 }
+
+
+
+/* ==========================================================
+   Hero Section Kadir
+   ========================================================== */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-inline: calc(-1 * var(--spacing-md));
+    margin-bottom: var(--spacing-xl);
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* gelbe welle */
+.hero-left-wave {
+    position: relative;
+    z-index: 2;
+    background-color: var(--primary-yellow);
+    opacity: 1;
+    width: 222px;
+    height: 299px;
+    clip-path: path("M 0 0 L 222 0 C 130 110, 110 200, 0 299 Z")
+}
+
+/* grüne logo */
+.hero-badge {
+    position: absolute;
+    z-index: 3;
+    top: 110px; 
+    left: 45px; 
+    width: 110px;  
+    height: 110px; 
+    background-color: var(--primary-green);
+    border-radius: 50%; 
+    border: 4px solid var(--secondary-light); 
+}
+
+
+.hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/cat-landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* ==========================================================
+   Hero Section Kadir ENDE
+   ========================================================== */
+
+
 
 /* ==========================================================
    Slider Section
@@ -158,7 +236,8 @@ body {
 }
 
 .slider-wrapper {
-    width: 300%; /* Weil 3 Bilder/divs */
+    width: 300%;
+    /* Weil 3 Bilder/divs */
     height: 100%;
 
     position: absolute;
@@ -181,14 +260,14 @@ body {
     border-top-right-radius: 100px;
 }
 
-.slider input[value="paloma"]:checked ~ .slider-wrapper {
+.slider input[value="paloma"]:checked~.slider-wrapper {
     transform: translateX(0);
 }
 
-.slider input[value="kadir"]:checked ~ .slider-wrapper {
+.slider input[value="kadir"]:checked~.slider-wrapper {
     transform: translateX(calc(100% / 3));
 }
 
-.slider input[value="tolga"]:checked ~ .slider-wrapper {
+.slider input[value="tolga"]:checked~.slider-wrapper {
     transform: translateX(calc(-100% / 3));
 }
