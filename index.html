@@ -1,72 +1,91 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animal Blog</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animal Blog</title>
-
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
 <body>
     <header>
         <img src="./assets/icons/blog_logo.svg" alt="blog_logo">
     </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-banner">
-                <div class="hero-left-wave">
-                    <div class="hero-content">
-                        <h1>Our Cute Friends</h1>
-                        <p>Discover the cutest animals in the world!</p>
-                    </div>
-                </div>
-                <div class="hero-badge">
-                    <p>Meet our furry friends!</p>
-                </div>
-                <div class="hero-background-image"></div>
-            </div>
-        </section>
-
-
-
-        <section class="slider-section">
-            <section class="slider-heading">
-                <img src="./assets/icons/rocket_launch.svg" alt="Rocket launch icon" />
-                <h2>Highlights</h2>
-            </section>
-            <section class="slider-image-wrapper">
-                <card class="slider-text-overlay">
-                    <h3>The World's Most Breathtaking Animals</h3>
-                    <p>
-                        From cute cats to much more unsuspecting animals.
-                        Here are our highlights.
-                    </p>
-                </card>
-                <div class="slider">
-                    <input type="radio" name="slider" value="kadir" checked />
-                    <input type="radio" name="slider" value="paloma" />
-                    <input type="radio" name="slider" value="tolga" />
-
-                    <div class="slider-wrapper">
-                        <div class="slider-element element-kadir">
-                            <img src="./assets/images/cat-landing.jpg" alt="Picture of a cat" />
-                        </div>
-                        <div class="slider-element element-paloma">
-                            <img src="./assets/images/octopus-landing.jpg" alt="Picture of an octopus" />
-                        </div>
-                        <div class="slider-element element-tolga">
-                            <img src="./assets/images/dog-landing.jpg" alt="Picture of a dog" />
+        <main>
+            <section class="hero-section">
+                <div class="hero-banner">
+                    <div class="hero-left-wave">
+                        <div class="hero-content">
+                            <h1>Our Cute Friends</h1>
+                            <p>Discover the cutest animals in the world!</p>
                         </div>
                     </div>
+                    <div class="hero-badge">
+                        <p>Meet our furry friends!</p>
+                    </div>
+                    <div class="hero-background-image"></div>
                 </div>
             </section>
-        </section>
-        <section class="faq-section"></section>
-        <section></section>
-    </main>
+
+            <section class="slider-section">
+                <section class="slider-heading">
+                    <img
+                        src="./assets/icons/rocket_launch.svg"
+                        alt="Rocket launch icon"
+                    />
+                    <h2>Highlights</h2>
+                </section>
+                <section class="slider-image-wrapper">
+                    <div class="slider">
+                        <input
+                            type="radio"
+                            name="slider"
+                            value="kadir"
+                            checked
+                        />
+                        <input type="radio" name="slider" value="paloma" />
+                        <input type="radio" name="slider" value="tolga" />
+
+                        <div class="slider-wrapper">
+                            <div class="slider-element element-kadir">
+                                <img
+                                    src="./assets/images/cat-landing.jpg"
+                                    alt="Picture of a cat"
+                                />
+                                <div class="slider-text-overlay">
+                                    <h3>Kadirs Katze</h3>
+                                    <p>Ein süßer Stubentiger.</p>
+                                </div>
+                            </div>
+                            <div class="slider-element element-paloma">
+                                <img
+                                    src="./assets/images/octopus-landing.jpg"
+                                    alt="Picture of an octopus"
+                                />
+                                <div class="slider-text-overlay">
+                                    <h3>Palomas Oktopus</h3>
+                                    <p>Acht Arme voller Persönlichkeit.</p>
+                                </div>
+                            </div>
+                            <div class="slider-element element-tolga">
+                                <img
+                                    src="./assets/images/dog-landing.jpg"
+                                    alt="Picture of a dog"
+                                />
+                                <div class="slider-text-overlay">
+                                    <h3>Tolgas Hund</h3>
+                                    <p>Bester Freund des Menschen. (Platzhalter, du darfst ein anderes Tier nehmen :D</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="faq-section"></section>
+            <section></section>
+        </main>
 
     <footer>
         <img src="./assets/icons/Home_green.svg" alt="home_green">
