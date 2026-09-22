@@ -1,3 +1,23 @@
+:root {
+    /* Colours */
+    --primary-yellow: rgba(241, 201, 83, 1);
+    --primary-green: rgba(78, 164, 135, 1);
+    --secondary-brown: rgba(84, 55, 13, 1);
+    --secondary-light: rgba(255, 255, 255, 1);
+
+    /* Fontsizes */
+    --h2-mobile: 40px;
+    --h3-mobile: 28px;
+    --p-mobile: 20px; 
+    
+    /* Spacing (delete when not used in end */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 48px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,9 +34,9 @@ body {
 /* ==========================================================
    Slider Section
    ========================================================== */
-.slider{
+.slider {
     position: relative;
-    
+
     width: 100%;
     height: 530px;
 
@@ -54,14 +74,14 @@ body {
     display: block;
 }
 
-.slider input[value="paloma"]:checked~.slider-wrapper {
+.slider input[value="paloma"]:checked ~ .slider-wrapper {
     transform: translateX(0);
 }
 
-.slider input[value="kadir"]:checked~.slider-wrapper {
+.slider input[value="kadir"]:checked ~ .slider-wrapper {
     transform: translateX(calc(100% / 3));
 }
 
-.slider input[value="tolga"]:checked~.slider-wrapper {
+.slider input[value="tolga"]:checked ~ .slider-wrapper {
     transform: translateX(calc(-100% / 3));
 }
