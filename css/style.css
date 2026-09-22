@@ -95,13 +95,16 @@ html {
 }
 
 body {
-    margin-inline: 16px;
+    margin-inline: var(--spacing-md);
 }
 
 /* ==========================================================
    Slider Section
    ========================================================== */
 .slider-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px;
 }
 
 .slider-heading h2 {
@@ -110,12 +113,30 @@ body {
     color: var(--primary-green);
 }
 
+.slider-image-wrapper {
+    position: relative;
+}
+
+.slider-text-overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    z-index: 2;
+
+    color: var(--secondary-light);
+}
+
 .slider-text-overlay h3 {
     font-family: var(--h3);
+    font-size: var(--h3-mobile);
 }
 
 .slider-text-overlay p {
     font-family: var(--p);
+    font-size: var(--p-mobile);
 }
 
 .slider {
