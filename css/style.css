@@ -119,7 +119,7 @@ body {
 
 .slider-text-overlay {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.1);
@@ -177,6 +177,8 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+
+    border-top-right-radius: 100px;
 }
 
 .slider input[value="paloma"]:checked ~ .slider-wrapper {
