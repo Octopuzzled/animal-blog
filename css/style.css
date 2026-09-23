@@ -111,6 +111,9 @@ html {
 
 main {
     margin-inline: var(--spacing-md);
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* ==========================================================
@@ -132,6 +135,7 @@ header {
     gap: var(--spacing-sm);
 
     width: 100%;
+    padding-top: 80px;
 }
 
 .section-heading h2 {
@@ -224,7 +228,6 @@ header {
 .slider-section {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
     padding: 0px 8px;
     gap: 32px;
 }
@@ -342,6 +345,8 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 80px;
 }
 .form > label {
     display: block;
