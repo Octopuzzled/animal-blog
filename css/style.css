@@ -26,7 +26,6 @@
 
 /* palanquin-dark-regular - latin */
 @font-face {
-<<<<<<< HEAD
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin Dark';
@@ -34,19 +33,10 @@
     font-weight: 400;
     src: url('/assets/fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Palanquin Dark";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/assets/fonts/palanquin-dark-v17-latin-regular.woff2")
-        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 }
 
 /* palanquin-dark-700 - latin */
 @font-face {
-<<<<<<< HEAD
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin Dark';
@@ -54,18 +44,10 @@
     font-weight: 700;
     src: url('/assets/fonts/palanquin-dark-v17-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Palanquin Dark";
-    font-style: normal;
-    font-weight: 700;
-    src: url("/assets/fonts/palanquin-dark-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 }
 
 /* palanquin-regular - latin */
 @font-face {
-<<<<<<< HEAD
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
@@ -73,18 +55,10 @@
     font-weight: 400;
     src: url('assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Palanquin";
-    font-style: normal;
-    font-weight: 400;
-    src: url("assets/fonts/palanquin-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 }
 
 /* palanquin-700 - latin */
 @font-face {
-<<<<<<< HEAD
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
@@ -92,13 +66,6 @@
     font-weight: 700;
     src: url('assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "Palanquin";
-    font-style: normal;
-    font-weight: 700;
-    src: url("assets/fonts/palanquin-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 }
 
 /* ==========================================================
@@ -142,7 +109,6 @@ body {
     margin-inline: var(--spacing-md);
 }
 
-<<<<<<< HEAD
 
 
 /* ==========================================================
@@ -209,17 +175,6 @@ body {
 
 
 
-=======
-header{
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    background-color: var(--primary-green);
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
-}
-
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 /* ==========================================================
    Slider Section
    ========================================================== */
@@ -328,43 +283,6 @@ header{
     font-size: var(--p-mobile);
 }
 
-<<<<<<< HEAD
-.slider {
-    position: relative;
-
-    width: 100%;
-    height: 530px;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    overflow: hidden;
-}
-
-.slider input {
-    z-index: 2;
-    margin: 5px;
-}
-
-.slider-wrapper {
-    width: 300%;
-    /* Weil 3 Bilder/divs */
-    height: 100%;
-
-    position: absolute;
-    display: flex;
-
-    transition: all 1s ease-in-out;
-}
-
-.slider-element {
-    width: calc(100% / 3);
-    height: 100%;
-}
-
-=======
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 .slider-element img {
     width: 100%;
     height: 100%;
@@ -384,8 +302,6 @@ header{
 
 .slider input[value="tolga"]:checked~.slider-wrapper {
     transform: translateX(calc(-100% / 3));
-<<<<<<< HEAD
-=======
 }
 
 footer{
@@ -402,5 +318,4 @@ footer{
 
 footer img {
     width: 32px;
->>>>>>> 2ecad6b84d6505444c80a3191aa19070c21fdc0e
 }
