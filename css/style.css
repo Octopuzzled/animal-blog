@@ -184,43 +184,10 @@ header {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-/* gelbe welle */
-.hero-left-wave {
-    position: relative;
-    z-index: 2;
-    background-color: var(--primary-yellow);
-    opacity: 1;
-    width: 222px;
-    height: 299px;
-    clip-path: path("M 0 0 L 222 0 C 130 110, 110 200, 0 299 Z");
-}
-
-/* grüne logo */
-.hero-badge {
-    position: absolute;
-    z-index: 3;
-    top: 110px;
-    left: 45px;
-    width: 110px;
-    height: 110px;
-    background-color: var(--primary-green);
-    border-radius: 50%;
-    border: 4px solid var(--secondary-light);
-}
-=======
->>>>>>> 1a1c7f7 (style: add kadir hero section mobile layouts and logo)
 
 .hero-background-image {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    background-image: url("../assets/images/cat-landing.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-=======
 
     background-image:
         url('../assets/icons/vector-17.png'),
@@ -229,7 +196,6 @@ header {
     background-position: top left, right center;
     background-size: auto, cover;
     background-repeat: no-repeat, no-repeat;
->>>>>>> 1a1c7f7 (style: add kadir hero section mobile layouts and logo)
 }
 
 .hero-badge {
