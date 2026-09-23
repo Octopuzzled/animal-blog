@@ -311,18 +311,18 @@ body {
    FAQ Section
    ========================================================== */
 .faq-section {
+
 }
 
 .form {
     position: relative;
 }
-.form label {
-    display: block;
-    color: var(--secondary-brown);
-    padding-top: 20px;
-    
+.form > label {
+    color: var(--secondary-brown);    
     font-family: var(--p);
     font-size: var(--form-mobile);
+
+    padding-top: 20px;
 }
 .form input {
     width: 100%;
@@ -338,19 +338,30 @@ body {
 
 .checkbox {
     display: flex;
-    justify-content: flex-start;
-    align-items: first baseline;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary-brown);
+    border-radius: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    margin-top: 2px;
 }
 
 .checkbox label {
+    font-family: var(--p);
     font-size: var(--p-small);
-}
-
-.form button {
-    
-}
-.form button:hover {
-    
+    color: var(--secondary-brown);
+    line-height: 1.5;
 }
 
 /* ==========================================================
