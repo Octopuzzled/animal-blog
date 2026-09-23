@@ -377,6 +377,14 @@ header {
     border: 0;
     transition: all 0.3s;
     border-bottom: 2px solid var(--secondary-brown);
+
+    color: var(--primary-green);
+    font-family: var(--p);
+    font-size: var(--l-mobile);
+    font-weight: 500;
+}
+.form input.message {
+    font-weight: 400;
 }
 
 .checkbox {
