@@ -338,9 +338,62 @@ header {
     transform: translateX(calc(-100% / 3));
 }
 /* ==========================================================
-   FAQ Section
+   FAQ Section Tolga
    ========================================================== */
-   
+.faq-section {
+  margin: 0 auto;
+}
+
+.faq-section details {
+  background: var(--primary-yellow);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  font-family: var(--p);
+}
+
+.faq-section summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-brown);
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 19px;
+  height: 11px;
+  background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
+  transform: rotate(180deg);
+}
+
+.faq-section details[open] summary::after {
+  transform: none;
+}
+
+.faq-section p {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-brown);
+}
+
+/* ==========================================================
+   Contact form Section
+   ========================================================== */
 .contact-section p {
     display: none;
 }
@@ -464,7 +517,7 @@ header {
 }
 
 /* ==========================================================
-   Footer
+   Footer Section Tolga
    ========================================================== */
 footer {
     display: flex;
