@@ -174,26 +174,17 @@ header {
     cursor: pointer;
 }
 
-/* ==========================================================
-   Hero Section Kadir
-   ========================================================== */
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin-inline: calc(-1 * var(--spacing-md));
-    margin-bottom: var(--spacing-xl);
-}
+/*                                     Hero Section Kadir                        */
 
-.hero-banner {
-    position: relative;
+
+.hero-section {
+    position: relative; 
     width: 100%;
-    height: 533px;
-    display: flex;
-    flex-direction: column;
+    height: 515px; 
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* gelbe welle */
 .hero-left-wave {
     position: relative;
@@ -217,23 +208,50 @@ header {
     border-radius: 50%;
     border: 4px solid var(--secondary-light);
 }
+=======
+>>>>>>> 1a1c7f7 (style: add kadir hero section mobile layouts and logo)
 
 .hero-background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     background-image: url("../assets/images/cat-landing.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+=======
+
+    background-image:
+        url('../assets/icons/vector-17.png'),
+        url('../assets/images/cat-landing.jpg');
+
+    background-position: top left, right center;
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+>>>>>>> 1a1c7f7 (style: add kadir hero section mobile layouts and logo)
 }
 
-/* ==========================================================
-   Hero Section Kadir ENDE
-   ========================================================== */
+.hero-badge {
+    position: absolute;
+    top: 125px;
+    left: 55px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.badge-logo {
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+} 
+/*                            Hero Section Kadir ENDE                   */
+
 
 /* ==========================================================
    Slider Section
@@ -354,6 +372,7 @@ header {
     transform: translateX(calc(-100% / 3));
 }
 
+<<<<<<< HEAD
 /* ==========================================================
    FAQ Section
    ========================================================== */
@@ -482,6 +501,8 @@ header {
 /* ==========================================================
    Footer
    ========================================================== */
+=======
+>>>>>>> 1a1c7f7 (style: add kadir hero section mobile layouts and logo)
 footer {
     display: flex;
     justify-content: space-between;
