@@ -78,13 +78,14 @@
     --primary-green: rgba(78, 164, 135, 1);
     --secondary-brown: rgba(84, 55, 13, 1);
     --secondary-light: rgb(255, 255, 255);
+    --secondary-grey: rgba(115, 115, 115, 1);
 
     /* Fontsizes */
     --h2-mobile: 40px;
     --h3-mobile: 28px;
-    --p-mobile: 20px;
-    --form-mobile: 24px;
-    --p-small: 15px;
+    --l-mobile: 24px;
+    --m-mobile: 20px;
+    --s-mobile: 15px;
 
     /* Font faces */
     --h2: Arima;
@@ -115,7 +116,7 @@ main {
 /* ==========================================================
    Header Section Tolga
    ========================================================== */
-header{
+header {
     display: flex;
     justify-content: center;
     height: 70px;
@@ -137,6 +138,23 @@ header{
     font-family: var(--h2);
     font-size: var(--h2-mobile);
     color: var(--primary-green);
+}
+
+.btn-default {
+    background-color: var(--primary-green);
+    height: 48px;
+
+    color: var(--primary-yellow);
+    font-family: var(--h2);
+    font-size: var(--l-mobile);
+    font-weight: 700;
+    letter-spacing: 5%;
+
+    border-radius: 40px;
+    border: none;
+    padding: 0 20px;
+
+    cursor: pointer;
 }
 
 /* ==========================================================
@@ -293,7 +311,7 @@ header{
 
 .slider-text-overlay p {
     font-family: var(--p);
-    font-size: var(--p-mobile);
+    font-size: var(--m-mobile);
 }
 
 .slider-element img {
@@ -320,17 +338,17 @@ header{
 /* ==========================================================
    FAQ Section
    ========================================================== */
-.faq-section {
-
-}
-
 .form {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .form > label {
-    color: var(--secondary-brown);    
+    display: block;
+
+    color: var(--secondary-brown);
     font-family: var(--p);
-    font-size: var(--form-mobile);
+    font-size: var(--l-mobile);
 
     padding-top: 20px;
 }
@@ -357,6 +375,8 @@ header{
     appearance: none;
     -webkit-appearance: none;
 
+    position: relative;
+
     width: 20px;
     height: 20px;
     border: 2px solid var(--secondary-brown);
@@ -369,9 +389,54 @@ header{
 
 .checkbox label {
     font-family: var(--p);
-    font-size: var(--p-small);
+    font-size: var(--s-mobile);
     color: var(--secondary-brown);
     line-height: 1.5;
+}
+
+.checkbox input:hover {
+    background-color: var(--primary-yellow);
+}
+
+.checkbox input:checked {
+    background-color: var(--primary-green);
+    border: none;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid var(--primary-yellow);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper button {
+    width: 140px;
+}
+
+.form:not(:has(#privacy-policy:checked)) button {
+    background-color: white;
+    color: var(--secondary-grey);
+    border: 1px solid var(--secondary-grey);
+    text-shadow: none;
+    box-shadow: none;
+
+    pointer-events: none;
+}
+
+.form button:hover {
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(78, 164, 135, 0.3);
 }
 
 /* ==========================================================
