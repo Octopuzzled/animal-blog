@@ -82,31 +82,40 @@
                 </section>
             </section>
             <section class="faq-section"></section>
-                <section class="contact-section">
-                    <section class="section-heading">
-                        <img
-                            src="./assets/icons/rocket_launch.svg"
-                            alt="Rocket launch icon"
-                        />
-                        <h2>Contact form</h2>
-                    </section>
-
-                    <form class="form">
-                        <p>
-                            <label for="name">What's your name?</label>
-                            <input />
-                        </p>
-                        <p>
-                            <label for="email">What's your email?</label>
-                            <input />
-                        </p>
-                        <p>
-                            <label for="message">How can we help?</label>
-                            <input />
-                        </p>
-                        <button>Send Message</button>
-                    </form>
+            <section class="contact-section">
+                <section class="section-heading">
+                    <img
+                        src="./assets/icons/rocket_launch.svg"
+                        alt="Rocket launch icon"
+                    />
+                    <h2>Contact form</h2>
                 </section>
+
+                <form class="form">
+                    <label for="name">What's your name?</label>
+                    <input id="name" />
+
+                    <label for="email">What's your email?</label>
+                    <input id="email" />
+
+                    <label for="message">How can we help?</label>
+                    <input id="mesage" />
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="privacy-policy"
+                            name="privacy-policy"
+                            value="privacy policy"
+                        />
+                        <label for="privacy-policy"
+                            >I've read the privacy policy and agree to the
+                            processing of my data as outlined.</label
+                        >
+                    </div>
+
+                    <button>Send Message</button>
+                </form>
             </section>
         </main>
 

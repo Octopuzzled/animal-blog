@@ -83,6 +83,8 @@
     --h2-mobile: 40px;
     --h3-mobile: 28px;
     --p-mobile: 20px;
+    --form-mobile: 24px;
+    --p-small: 15px;
 
     /* Font faces */
     --h2: Arima;
@@ -319,6 +321,8 @@ body {
     color: var(--secondary-brown);
     padding-top: 20px;
     
+    font-family: var(--p);
+    font-size: var(--form-mobile);
 }
 .form input {
     width: 100%;
@@ -330,6 +334,16 @@ body {
     border: 0;
     transition: all 0.3s;
     border-bottom: 2px solid var(--secondary-brown);
+}
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+}
+
+.checkbox label {
+    font-size: var(--p-small);
 }
 
 .form button {
