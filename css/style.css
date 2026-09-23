@@ -337,7 +337,135 @@ header {
 .slider input[value="tolga"]:checked ~ .slider-wrapper {
     transform: translateX(calc(-100% / 3));
 }
+/* ==========================================================
+   FAQ Section
+   ========================================================== */
+   
+.contact-section p {
+    display: none;
+}
 
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 80px;
+}
+.form label {
+    display: block;
+
+    color: var(--secondary-brown);
+    font-family: var(--p);
+    font-size: var(--l-mobile);
+    font-weight: 500;
+
+    padding-top: 20px;
+}
+.form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid var(--secondary-brown);
+
+    color: var(--primary-green);
+    font-family: var(--p);
+    font-size: var(--l-mobile);
+    font-weight: 500;
+}
+.form input.message {
+    font-weight: 400;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary-brown);
+    border-radius: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    margin-top: 2px;
+}
+
+.checkbox label {
+    font-family: var(--p);
+    font-size: var(--s-mobile);
+    color: var(--secondary-brown);
+    line-height: 1.5;
+}
+
+.checkbox label a {
+    color: var(--primary-green);
+    text-decoration: none;
+    padding-inline: 5px;
+}
+
+.checkbox input:hover {
+    background-color: var(--primary-yellow);
+}
+
+.checkbox input:checked {
+    background-color: var(--primary-green);
+    border: none;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid var(--primary-yellow);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper button {
+    width: 140px;
+}
+
+.form:not(:has(#privacy-policy:checked)) button {
+    background-color: white;
+    color: var(--secondary-grey);
+    border: 1px solid var(--secondary-grey);
+    text-shadow: none;
+    box-shadow: none;
+
+    pointer-events: none;
+}
+
+.form button:hover {
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(78, 164, 135, 0.3);
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
 footer {
     display: flex;
     justify-content: space-between;
