@@ -96,6 +96,8 @@
     --m-mobile: 20px;
     --s-mobile: 15px;
 
+    --h2-desktop: 52px;
+
     /* Font faces */
     --h2: Arima;
     --h3: Palanquin Dark;
@@ -125,7 +127,6 @@ main {
     flex-direction: column;
 
     max-width: 1440px;
-    margin-inline: auto;
 }
 
 /* ==========================================================
@@ -237,10 +238,13 @@ header {
 /* ==========================================================
    Slider Section
    ========================================================== */
+.slider-section p {
+    display: none;
+}
+
 .slider-section {
     display: flex;
     flex-direction: column;
-    padding: 0px 8px;
     gap: 32px;
 }
 
@@ -353,6 +357,10 @@ header {
 /* ==========================================================
    FAQ Section
    ========================================================== */
+.contact-section p {
+    display: none;
+}
+
 .form {
     position: relative;
     display: flex;
@@ -360,7 +368,7 @@ header {
 
     margin-bottom: 80px;
 }
-.form > label {
+.form label {
     display: block;
 
     color: var(--secondary-brown);
@@ -489,5 +497,86 @@ footer img {
 }
 
 /* ==========================================================
-   Meciaqueries
+   Mediaqueries
    ========================================================== */
+
+@media (min-width: 788px) {
+    main {
+        margin-inline: 120px;
+    }
+
+    .section-heading h2 {
+        font-size: var(--h2-desktop);
+    }
+
+    .slider-section {
+        gap: 0;
+    }
+
+    .slider-section p,
+    .contact-section p {
+        display: block;
+
+        margin: 24px 0 56px;
+
+        font-family: var(--p);
+        font-size: var(--l-mobile);
+        font-weight: 500;
+        text-align: center;
+        line-height: 110.00000000000001%;
+        color: var(--secondary-brown);
+    }
+
+    .slider-text-overlay {
+        width: 70%;
+        top: 54px;
+        left: 38px;
+    }
+
+    .slider-text-overlay p {
+        color: var(--secondary-light);
+        text-align: start;
+    }
+
+    .form-neighours {
+        width: 100%;
+        display: flex;
+        gap: 10%;
+    }
+
+    .form-neighours div {
+        width: 45%;
+    }
+
+    .form label {
+        padding: 0;
+    }
+
+    .checkbox {
+        justify-content: center;
+    }
+
+    .checkbox label {
+        line-height: initial;
+    }
+
+    .btn-wrapper {
+        padding-top: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 1440px;
+        margin-inline: auto;
+    }
+
+    .form-neighours {
+        display: flex;
+        gap: 100px
+    }
+
+    .form-neighours div {
+        width: 50%;
+    }
+}
