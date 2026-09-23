@@ -108,8 +108,18 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+main {
     margin-inline: var(--spacing-md);
+}
+
+/* ==========================================================
+   Header Section Tolga
+   ========================================================== */
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: var(--primary-green);
 }
 
 /* ==========================================================
@@ -374,8 +384,6 @@ footer {
     gap: 32px;
     height: 90px;
     background-color: var(--primary-yellow);
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
     padding: 24px 25px;
 }
 
