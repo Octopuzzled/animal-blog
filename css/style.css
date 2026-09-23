@@ -58,6 +58,15 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* palanquin-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/fonts/palanquin-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* palanquin-700 - latin */
 @font-face {
     font-display: swap;
@@ -354,6 +363,7 @@ header {
     color: var(--secondary-brown);
     font-family: var(--p);
     font-size: var(--l-mobile);
+    font-weight: 500;
 
     padding-top: 20px;
 }
@@ -397,6 +407,12 @@ header {
     font-size: var(--s-mobile);
     color: var(--secondary-brown);
     line-height: 1.5;
+}
+
+.checkbox label a {
+    color: var(--primary-green);
+    text-decoration: none;
+    padding-inline: 5px;
 }
 
 .checkbox input:hover {
