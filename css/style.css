@@ -138,6 +138,7 @@ header {
     justify-content: center;
     height: 70px;
     background-color: var(--primary-green);
+    padding: 7px 0;
 }
 
 /* ==========================================================
@@ -180,8 +181,9 @@ header {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     background-color: #F1C953;
+    height: 515px;
     overflow: hidden;
 
 }
@@ -191,6 +193,14 @@ header {
     background-image: url('../assets/icons/vector-17.png'),
         url('../assets/images/cat-landing.jpg');
     background-position: top left, 100% center;
+
+    background-image:
+        url("../assets/icons/vector-17.png"),
+        url("../assets/images/cat-landing.jpg");
+
+    background-position:
+        top left,
+        right center;
     background-size: auto, cover;
     background-repeat: no-repeat;
 }
@@ -222,7 +232,9 @@ header {
 }
 
 /*                            Hero Section Kadir ENDE                   */
+}
 
+/*                            Hero Section Kadir ENDE                   */
 
 
 /* ==========================================================
@@ -382,6 +394,47 @@ header {
     height: 11px;
     background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
     transform: rotate(180deg);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faq-summary{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-summary details {
+    background: var(--primary-yellow);
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-family: var(--p);
+}
+
+.faq-summary summary {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+    width: 307px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--secondary-brown);
+}
+
+.faq-section summary::after {
+    display: block;
+    content: "";
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 .faq-section details[open] summary::after {
@@ -395,6 +448,13 @@ header {
     border-radius: 6px;
     font-size: 1rem;
     font-weight: 500;
+    margin: 8px 0;
+    padding: 4px 10px;
+    background: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
     color: var(--secondary-brown);
 }
 
@@ -420,8 +480,6 @@ header {
     font-family: var(--p);
     font-size: var(--l-mobile);
     font-weight: 500;
-
-    padding-top: 20px;
 }
 
 .form input {
@@ -529,18 +587,49 @@ header {
 /* ==========================================================
    Footer Section Tolga
    ========================================================== */
-footer {
+.green-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 134px;
+    background-color: var(--primary-green);
+    color: white;
+    font-family: var(--p);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 30px var(--spacing-lg);
+}
+
+.green-left{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.copyright-icon {
+    display: flex;
+    gap: 4px;
+}
+
+.socials-footer {
+    display: flex;
+    gap: 16px;
+    height: var(--l-mobile);
+}
+
+.yellow-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 48px;
     height: 90px;
     background-color: var(--primary-yellow);
-    padding: 24px 25px;
+    padding: var(--spacing-lg) 25px;
 }
 
-footer img {
-    width: 32px;
+.yellow-footer img {
+    width: 40px;
 }
 
 /* ==========================================================
@@ -549,7 +638,7 @@ footer img {
 
 @media (min-width: 788px) {
     main {
-        margin-inline: 120px;
+        padding-inline: 120px;
     }
 
     .section-heading h2 {
@@ -585,14 +674,15 @@ footer img {
         text-align: start;
     }
 
-    .form-neighours {
-        width: 100%;
+    .form-neighbours {
         display: flex;
         gap: 10%;
     }
 
-    .form-neighours div {
+    .form-neighbours div {
         width: 45%;
+
+        flex: 1;
     }
 
     .form label {
