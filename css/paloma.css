@@ -1,0 +1,23 @@
+p, article {
+    font-family: var(--p);
+    font-size: 16px;
+    color: var(--secondary-brown);
+}
+
+h1 {
+    font-family: var(--h2);
+    font-size: 40px;
+    color: var(--primary-yellow);
+}
+
+.above-h1 {
+    font-size: 20px;
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.share > p {
+    font-family: var(--h2);
+    font-size: 18px;
+    text-align: center;
+}
