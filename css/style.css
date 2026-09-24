@@ -519,17 +519,42 @@ header {
 /* ==========================================================
    Footer Section Tolga
    ========================================================== */
-footer {
+.green-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: var(--spacing-lg);
+    background-color: var(--primary-green);
+    height: 135px;
+    color: white;
+    font-family: var(--p);
+    font-size: var(--p-small);
+    font-weight: 400;
+    padding: 30px var(--spacing-md);
+}
+
+.copyright-icon {
+    display: flex;
+    gap: 4px;
+}
+
+.socials-footer{
+    display: flex;
+    gap: 16px;
+    height: var(--form-mobile);
+}
+
+.yellow-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
     height: 90px;
     background-color: var(--primary-yellow);
-    padding: 24px 25px;
+    padding: var(--spacing-lg);
 }
 
-footer img {
+.yellow-footer img {
     width: 32px;
 }
 
