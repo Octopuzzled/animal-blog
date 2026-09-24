@@ -535,14 +535,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: var(--spacing-lg);
+    height: 134px;
     background-color: var(--primary-green);
-    height: 135px;
     color: white;
     font-family: var(--p);
-    font-size: var(--p-small);
+    font-size: 16px;
     font-weight: 400;
-    padding: 30px var(--spacing-md);
+    line-height: 120%;
+    padding: 30px var(--spacing-lg);
+}
+
+.green-left{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .copyright-icon {
@@ -560,14 +566,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 48px;
     height: 90px;
     background-color: var(--primary-yellow);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) 25px;
 }
 
 .yellow-footer img {
-    width: 32px;
+    width: 40px;
 }
 
 /* ==========================================================
