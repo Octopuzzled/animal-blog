@@ -193,11 +193,6 @@ header {
     background-image: url('../assets/icons/vector-17.png'),
         url('../assets/images/cat-landing.jpg');
     background-position: top left, 100% center;
-
-    background-image:
-        url("../assets/icons/vector-17.png"),
-        url("../assets/images/cat-landing.jpg");
-
     background-position:
         top left,
         right center;
@@ -231,8 +226,6 @@ header {
     mix-blend-mode: multiply;
 }
 
-/*                            Hero Section Kadir ENDE                   */
-}
 
 /*                            Hero Section Kadir ENDE                   */
 
