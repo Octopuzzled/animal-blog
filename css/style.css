@@ -31,8 +31,7 @@
     font-family: "Palanquin Dark";
     font-style: normal;
     font-weight: 400;
-    src: url("/assets/fonts/palanquin-dark-v17-latin-regular.woff2")
-        format("woff2");
+    src: url("/assets/fonts/palanquin-dark-v17-latin-regular.woff2") format("woff2");
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -60,11 +59,13 @@
 
 /* palanquin-500 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Palanquin";
     font-style: normal;
     font-weight: 500;
-    src: url("/assets/fonts/palanquin-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/assets/fonts/palanquin-v17-latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-700 - latin */
@@ -176,47 +177,52 @@ header {
 
 /*                                     Hero Section Kadir                        */
 
-
 .hero-section {
-    position: relative; 
+    position: relative;
     width: 100%;
-    height: 515px; 
+    height: 100dvh;
+    background-color: #F1C953;
     overflow: hidden;
-}
 
+}
 
 .hero-background-image {
-    width: 100%;
     height: 100%;
-
-    background-image:
-        url('../assets/icons/vector-17.png'),
+    background-image: url('../assets/icons/vector-17.png'),
         url('../assets/images/cat-landing.jpg');
-
-    background-position: top left, right center;
+    background-position: top left, 100% center;
     background-size: auto, cover;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
 }
+
 
 .hero-badge {
     position: absolute;
-    top: 125px;
-    left: 55px;
-    width: 150px;
-    height: 150px;
+    top: 180px;
+    left: 133px;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
     background-color: var(--primary-green);
     border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
+
+
 }
 
 .badge-logo {
     width: 45%;
     height: 45%;
     border-radius: 50%;
-} 
+    transform: rotate(15deg);
+    mix-blend-mode: multiply;
+}
+
 /*                            Hero Section Kadir ENDE                   */
+
 
 
 /* ==========================================================
@@ -326,69 +332,70 @@ header {
     border-top-right-radius: 100px;
 }
 
-.slider input[value="paloma"]:checked ~ .slider-wrapper {
+.slider input[value="paloma"]:checked~.slider-wrapper {
     transform: translateX(0);
 }
 
-.slider input[value="kadir"]:checked ~ .slider-wrapper {
+.slider input[value="kadir"]:checked~.slider-wrapper {
     transform: translateX(calc(100% / 3));
 }
 
-.slider input[value="tolga"]:checked ~ .slider-wrapper {
+.slider input[value="tolga"]:checked~.slider-wrapper {
     transform: translateX(calc(-100% / 3));
 }
+
 /* ==========================================================
    FAQ Section Tolga
    ========================================================== */
 .faq-section {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .faq-section details {
-  background: var(--primary-yellow);
-  border-radius: 16px;
-  margin-bottom: 20px;
-  padding: 16px 20px;
-  font-family: var(--p);
+    background: var(--primary-yellow);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    font-family: var(--p);
 }
 
 .faq-section summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-brown);
 }
 
 .faq-section summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 .faq-section summary::after {
-  content: "";
-  flex-shrink: 0;
-  width: 19px;
-  height: 11px;
-  background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
-  transform: rotate(180deg);
+    content: "";
+    flex-shrink: 0;
+    width: 19px;
+    height: 11px;
+    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
+    transform: rotate(180deg);
 }
 
 .faq-section details[open] summary::after {
-  transform: none;
+    transform: none;
 }
 
 .faq-section p {
-  margin: 12px 0 0;
-  padding: 8px 12px;
-  background: white;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--secondary-brown);
+    margin: 12px 0 0;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-brown);
 }
 
 /* ==========================================================
@@ -405,6 +412,7 @@ header {
 
     margin-bottom: 80px;
 }
+
 .form label {
     display: block;
 
@@ -415,6 +423,7 @@ header {
 
     padding-top: 20px;
 }
+
 .form input {
     width: 100%;
     padding: 10px;
@@ -431,6 +440,7 @@ header {
     font-size: var(--l-mobile);
     font-weight: 500;
 }
+
 .form input.message {
     font-weight: 400;
 }
@@ -600,6 +610,24 @@ footer img {
     .btn-wrapper {
         padding-top: 32px;
     }
+
+.hero-section {
+        height: 515px;
+    }
+
+    .hero-background-image {
+        background-position: top left, right center;
+    }
+
+ 
+    .hero-badge {
+        top: 180px;
+        left: 133px;
+        width: 160px;
+        height: 160px;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -616,4 +644,6 @@ footer img {
     .form-neighours div {
         width: 50%;
     }
+
+
 }
