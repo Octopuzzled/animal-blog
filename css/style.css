@@ -412,8 +412,6 @@ header {
     font-family: var(--p);
     font-size: var(--l-mobile);
     font-weight: 500;
-
-    padding-top: 20px;
 }
 .form input {
     width: 100%;
