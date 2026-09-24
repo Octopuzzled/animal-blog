@@ -176,24 +176,24 @@ header {
 
 /*                                     Hero Section Kadir                        */
 
-
 .hero-section {
-    position: relative; 
+    position: relative;
     width: 100%;
-    height: 515px; 
+    height: 515px;
     overflow: hidden;
 }
-
 
 .hero-background-image {
     width: 100%;
     height: 100%;
 
     background-image:
-        url('../assets/icons/vector-17.png'),
-        url('../assets/images/cat-landing.jpg');
+        url("../assets/icons/vector-17.png"),
+        url("../assets/images/cat-landing.jpg");
 
-    background-position: top left, right center;
+    background-position:
+        top left,
+        right center;
     background-size: auto, cover;
     background-repeat: no-repeat, no-repeat;
 }
@@ -215,9 +215,8 @@ header {
     width: 45%;
     height: 45%;
     border-radius: 50%;
-} 
+}
 /*                            Hero Section Kadir ENDE                   */
-
 
 /* ==========================================================
    Slider Section
@@ -341,54 +340,54 @@ header {
    FAQ Section Tolga
    ========================================================== */
 .faq-section {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .faq-section details {
-  background: var(--primary-yellow);
-  border-radius: 16px;
-  margin-bottom: 20px;
-  padding: 16px 20px;
-  font-family: var(--p);
+    background: var(--primary-yellow);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    font-family: var(--p);
 }
 
 .faq-section summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-brown);
 }
 
 .faq-section summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 .faq-section summary::after {
-  content: "";
-  flex-shrink: 0;
-  width: 19px;
-  height: 11px;
-  background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
-  transform: rotate(180deg);
+    content: "";
+    flex-shrink: 0;
+    width: 19px;
+    height: 11px;
+    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
+    transform: rotate(180deg);
 }
 
 .faq-section details[open] summary::after {
-  transform: none;
+    transform: none;
 }
 
 .faq-section p {
-  margin: 12px 0 0;
-  padding: 8px 12px;
-  background: white;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--secondary-brown);
+    margin: 12px 0 0;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-brown);
 }
 
 /* ==========================================================
@@ -537,7 +536,7 @@ footer img {
 
 @media (min-width: 788px) {
     main {
-        margin-inline: 120px;
+        padding-inline: 120px;
     }
 
     .section-heading h2 {
@@ -573,14 +572,15 @@ footer img {
         text-align: start;
     }
 
-    .form-neighours {
-        width: 100%;
+    .form-neighbours {
         display: flex;
         gap: 10%;
     }
 
-    .form-neighours div {
+    .form-neighbours div {
         width: 45%;
+
+        flex: 1;
     }
 
     .form label {
@@ -604,14 +604,5 @@ footer img {
     main {
         max-width: 1440px;
         margin-inline: auto;
-    }
-
-    .form-neighours {
-        display: flex;
-        gap: 100px
-    }
-
-    .form-neighours div {
-        width: 50%;
     }
 }
