@@ -141,6 +141,10 @@ header {
     padding: 7px 0;
 }
 
+.header-nav {
+    display: none;
+}
+
 /* ==========================================================
    Reusable CSS
    ========================================================== */
@@ -599,6 +603,29 @@ header {
         font-size: var(--h2-desktop);
     }
 
+    header {
+        justify-content: flex-start;
+        gap: 48px;
+        height: 128px;
+        padding: 7px 120px;
+    }
+
+    .header-nav {
+        display: flex;
+        align-self: center;
+        gap: 60px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .header-nav a {
+        color: white;
+        font-family: var(--h2);
+        font-size: var(--l-mobile);
+        font-weight: 700;
+        text-decoration: none;
+    }
+
     .slider-section {
         gap: 0;
     }
@@ -626,6 +653,15 @@ header {
     .slider-text-overlay p {
         color: var(--secondary-light);
         text-align: start;
+    }
+
+    .faq-summary {
+        gap: 32px;
+    }
+
+    .faq-summary summary {
+        width: 100%;
+        font-size: 20px;
     }
 
     .form-neighbours {
@@ -671,7 +707,35 @@ header {
         height: 160px;
     }
 
+    .green-footer {
+        align-items: center;
+        height: 152px;
+        padding: 60px 120px;
+    }
 
+    .green-left {
+        flex-direction: row;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .copyright-icon {
+        order: -1;
+        align-items: center;
+    }
+
+    .socials-footer {
+        gap: 20px;
+        height: 32px;
+    }
+
+    .socials-footer img {
+        height: 32px;
+    }
+
+    .yellow-footer {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
