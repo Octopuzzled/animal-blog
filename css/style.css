@@ -352,80 +352,46 @@ header {
 /* ==========================================================
    FAQ Section Tolga
    ========================================================== */
+
 .faq-section {
-    margin: 0 auto;
-}
-
-.faq-section details {
-    background: var(--primary-yellow);
-    border-radius: 16px;
-    margin-bottom: 20px;
-    padding: 16px 20px;
-    font-family: var(--p);
-}
-
-.faq-section summary {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    list-style: none;
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--secondary-brown);
-}
-
-.faq-section summary::-webkit-details-marker {
-    display: none;
-}
-
-.faq-section summary::after {
-    content: "";
-    flex-shrink: 0;
-    width: 19px;
-    height: 11px;
-    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
-    transform: rotate(180deg);
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     gap: 32px;
 }
 
-.faq-summary{
+.faq-summary {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
 .faq-summary details {
-    background: var(--primary-yellow);
-    border-radius: 12px;
     padding: 16px 14px;
+    border-radius: 12px;
+    background: var(--primary-yellow);
     font-family: var(--p);
 }
 
 .faq-summary summary {
     display: flex;
     justify-content: space-between;
+    width: 307px;
     cursor: pointer;
     list-style: none;
-    width: 307px;
+    color: var(--secondary-brown);
     font-size: 16px;
     font-weight: 700;
     line-height: 120%;
-    color: var(--secondary-brown);
 }
 
 .faq-section summary::after {
-    display: block;
     content: "";
+    display: block;
     flex-shrink: 0;
-    height: 24px;
     width: 24px;
-    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat;
-    background-position: center;
+    height: 24px;
+    background: url("/assets/icons/arrow_forward_ios.svg") no-repeat center;
     transform: rotate(180deg);
     transition: 0.5s;
 }
@@ -435,20 +401,14 @@ header {
 }
 
 .faq-section p {
-    margin: 12px 0 0;
-    padding: 8px 12px;
-    background: white;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 500;
     margin: 8px 0;
     padding: 4px 10px;
-    background: white;
     border-radius: 5px;
+    background: white;
+    color: var(--secondary-brown);
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
-    color: var(--secondary-brown);
 }
 
 /* ==========================================================
@@ -580,21 +540,22 @@ header {
 /* ==========================================================
    Footer Section Tolga
    ========================================================== */
+   
 .green-footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
     height: 134px;
+    padding: 30px var(--spacing-lg);
     background-color: var(--primary-green);
     color: white;
     font-family: var(--p);
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    padding: 30px var(--spacing-lg);
 }
 
-.green-left{
+.green-left {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -617,8 +578,8 @@ header {
     align-items: center;
     gap: 48px;
     height: 90px;
-    background-color: var(--primary-yellow);
     padding: var(--spacing-lg) 25px;
+    background-color: var(--primary-yellow);
 }
 
 .yellow-footer img {
