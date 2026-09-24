@@ -1,4 +1,5 @@
-p, article {
+p,
+article {
     font-family: var(--p);
     font-size: 16px;
     color: var(--secondary-brown);
@@ -30,7 +31,25 @@ main {
 }
 
 .data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     padding-top: 24px;
+}
+
+.data > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.data img {
+    width: 20px;
+}
+
+.calendar,
+.shared {
+    padding-inline: 2px;
 }
 
 .share > p {
