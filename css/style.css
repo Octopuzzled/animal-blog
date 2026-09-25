@@ -626,6 +626,39 @@ main {
         text-decoration: none;
     }
 
+    .header-nav a:active {
+        color: var(--primary-yellow);
+    }
+
+    .header-nav li {
+        position: relative;
+    }
+
+    .nav-hover-image {
+        display: none;
+        position: absolute;
+    }
+
+        .hover-highlights .nav-hover-image {
+        top: 50%;
+        left: 0;
+    }
+
+    .hover-faq .nav-hover-image {
+        top: 70%;
+        left: 0;
+    }
+
+    .hover-contact .nav-hover-image {
+        top: 70%;
+        left: 0;
+    }
+
+
+    .header-nav li:hover .nav-hover-image {
+        display: block;
+    }
+
     .slider-section {
         gap: 0;
     }
