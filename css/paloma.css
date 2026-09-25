@@ -184,9 +184,9 @@ main {
     content: "";
     position: absolute;
     right: -2px;
-    bottom: -7px;
-    width: 14px;
-    height: 14px;
+    bottom: -8px;
+    width: 16px;
+    height: 16px;
     background: var(--primary-yellow);
     clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
