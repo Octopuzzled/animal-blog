@@ -218,16 +218,35 @@ main {
     justify-content: center;
     align-items: center;
     box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
+    
 
 
 }
 
 .badge-logo {
-    width: 45%;
-    height: 45%;
+    position: absolute;
+    width: 55%;
+    height: 55%;
     border-radius: 50%;
     transform: rotate(15deg);
     mix-blend-mode: multiply;
+
+    animation-name: animaldrehen;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+
+@keyframes animaldrehen {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(55deg);
+    }
 }
 
 
