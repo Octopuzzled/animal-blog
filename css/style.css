@@ -603,7 +603,7 @@ main {
         font-size: var(--h2-desktop);
     }
 
-    header {
+    .site-header {
         justify-content: flex-start;
         gap: 48px;
         height: 128px;
