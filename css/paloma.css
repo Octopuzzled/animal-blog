@@ -1,7 +1,6 @@
 p,
 article {
     font-family: var(--p);
-    font-size: 16px;
     color: var(--secondary-brown);
     line-height: 130%;
 }
@@ -27,7 +26,7 @@ main {
 
     margin-top: 24px;
     margin-bottom: 40px;
-    
+    height: fit-content;
 }
 
 .above-h1 {
@@ -70,13 +69,6 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    /* margin-top: 24px;
-    margin-bottom: 40px; */
-    /* padding: 16px 8px;
-
-    background: rgba(78, 164, 135, 0.2);
-    border-radius: 30px; */
 }
 
 .author > img {
@@ -93,7 +85,8 @@ main {
     font-weight: 700;
 }
 
-.main-article p, .main-article ul{
+.main-article p,
+.main-article ul {
     padding-block: 10px;
 }
 
@@ -118,7 +111,7 @@ main {
     border-radius: 30px;
 }
 
-.snippet-container{
+.snippet-container {
     position: relative;
 
     padding-top: 24px;
@@ -133,7 +126,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;    
+    gap: 10px;
 
     position: absolute;
     top: -60px;
@@ -144,7 +137,6 @@ main {
     color: var(--primary-yellow);
     font-size: 28px;
     font-weight: 700;
-
 }
 
 .share {
@@ -171,7 +163,6 @@ main {
     position: absolute;
     top: 50px;
     left: 5px;
-
 }
 
 .share button {
@@ -192,11 +183,91 @@ main {
    Mediaqueries
    ========================================================== */
 @media (min-width: 788px) {
+    .text {
+        font-size: 20px;
+    }
 
+    .intro {
+        font-size: 24px;
+    }
+
+    .author article {
+        font-size: 20px;
+    }
+
+    .author-name {
+        font-size: 18px;
+    }
+
+    .author-p {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1200px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    ul,
+    ol {
+        line-height: 120%;
+    }
+
     .intro-wrapper {
-        
+        min-width: 0;
+        display: flex;
+        gap: 16px;
+    }
+
+    .intro-header {
+        flex: 3;
+    }
+
+    .above-h1 {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 28px;
+        line-height: 110.00000000000001%;
+    }
+
+    .author {
+        flex: 1;
+
+        text-align: left;
+        padding-inline: 20px;
+    }
+
+    .data {
+        padding-top: 30px;
+        padding-bottom: 45px;
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        display: flex;
+        gap: 40px;
+    }
+
+    .data img {
+        width: fit-content;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .video-container {
+        padding-block: 44px;
+    }
+
+    .pro-tip {
+        padding-block: 44px;
+    }
+
+    .share {
+        max-width: 500px;
+        margin-inline: auto;
+        padding-bottom: 70px;
     }
 }
