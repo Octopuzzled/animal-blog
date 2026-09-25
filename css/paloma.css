@@ -158,6 +158,18 @@ main {
     font-weight: 500;
 }
 
+.text a {
+    color: var(--primary-green);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.share a {
+    color: var(--primary-green);
+    font-weight: 700;
+    padding: 8px;
+}
+
 .share-arrow {
     grid-column: 1;
     grid-row: 2 / 4;

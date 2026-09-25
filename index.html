@@ -13,21 +13,32 @@
     <header class="site-header">
         <img src="./assets/icons/animal_blog_logo.png" alt="animal_blog_logo" />
         <ul class="header-nav">
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="hover-highlights">
+                <a href="#highlights">Highlights</a>
+                <img src="./assets/icons/mainheaderhover1.svg" alt="" class="nav-hover-image" />
+            </li>
+            <li class="hover-faq">
+                <a href="#faq">FAQ</a>
+                <img src="./assets/icons/mainheaderhover2.svg" alt="" class="nav-hover-image" />
+            </li>
+            <li class="hover-contact">
+                <a href="#contact">Contact</a>
+                <img src="./assets/icons/mainheaderhover3.svg" alt="" class="nav-hover-image" />
+            </li>
         </ul>
     </header>
 
     <section class="hero-section">
         <div class="hero-badge">
-            <img src="./assets/icons/logo-mogo.png" alt="Animal Logo" class="badge-logo">
+            <img src="./assets/icons/logo-mogo.png" alt="Animal Logo" class="badge-logo" />
+            
+            <img src="./assets/icons/animal-logo-neu.png" alt="Animal Blog Text" class="badge-logo" />
         </div>
         <div class="hero-background-image"></div>
     </section>
 
     <main>
-        <section class="slider-section">
+        <section class="slider-section" id="highlights">
             <section class="section-heading">
                 <img src="./assets/icons/rocket_launch.svg" alt="Rocket launch icon" />
                 <h2>Highlights</h2>
@@ -103,7 +114,7 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <section class="section-heading">
                 <img src="./assets/icons/person_pin.svg" alt="Rocket launch icon" />
                 <h2>Contact form</h2>
