@@ -293,14 +293,13 @@ main {
 
 .badge-logo {
     position: absolute;
-    width: 65%;
+    width: 90%;
     /* %31 çok küçüktü, kutuyu güzel kaplasın diye %65 yapıldı */
-    height: 65%;
+    height: 90%;
     /* Logonun basık durmaması için yükseklik eşitlendi */
     object-fit: contain;
     /* Logonun sünmesi/bozulması engellendi */
     border-radius: 50%;
-    mix-blend-mode: multiply;
 
     animation-name: animaldrehen;
     animation-duration: 75s;
