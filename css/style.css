@@ -573,7 +573,9 @@ main {
 /* ==========================================================
    Footer Section Tolga
    ========================================================== */
-   
+footer {
+    padding-bottom: 90px;
+}
  .green-footer {
     display: flex;
     justify-content: space-between;
@@ -779,6 +781,10 @@ main {
         height: 160px;
     }
 
+    footer {
+        padding-bottom: 0;
+    }
+    
     .green-footer {
         align-items: center;
         height: 152px;
