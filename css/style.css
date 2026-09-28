@@ -133,7 +133,10 @@ main {
 /* ==========================================================
    Header Section Tolga
    ========================================================== */
-.site-header {
+.site-header > a {
+    display: flex;
+}
+   .site-header {
     display: flex;
     justify-content: center;
     height: 70px;
@@ -141,9 +144,21 @@ main {
     padding: 7px 0;
 }
 
+.site-header > a > img {
+    height: 56px;
+}
+
 .header-nav {
     display: none;
 }
+
+ .header-nav a {
+    color: white;
+    font-family: var(--h2);
+    font-size: var(--l-mobile);
+    font-weight: 700;
+    text-decoration: none;
+ }
 
 /* ==========================================================
    Reusable CSS
@@ -184,85 +199,69 @@ main {
 
 .hero-section {
     position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F1C953;
     height: 515px;
-    margin-inline: auto;
     overflow: hidden;
+
 }
 
 .hero-background-image {
-    position: absolute;
-    inset: 0;
-    background: url('/assets/images/cat-landing.jpg') center / cover no-repeat;
+    height: 100%;
+    background-image: url('../assets/icons/vector-17.png'),
+        url('../assets/images/cat-landing.jpg');
+    background-position: top left, 100% center;
+    background-position:top left,right center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
 }
 
-.hero-shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 58%;
-    z-index: 1;
-}
-
-
-.hero-text {
-    display: none;
-    position: absolute;
-    z-index: 2;
-}
-
-.hero-title {
-    font-family: var(--h2);
-    font-size: clamp(28px, 3.6vw, var(--h2-desktop));
-    font-weight: 700;
-    color: var(--secondary-brown);
-}
-
-.hero-description {
-    font-family: var(--p);
-    font-size: clamp(14px, 1.94vw, 28px);
-    font-weight: 500;
-    line-height: 110%;
-    color: var(--secondary-brown);
-}
 
 .hero-badge {
-     position: absolute;
-    top: 140px;
-    left: 45%;
+    position: absolute;
+    top: 180px;
+    left: 133px;
     transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px; 
+    width: 160px;
+    height: 160px;
     background-color: var(--primary-green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
-    z-index: 10; 
+    
+
+
 }
 
 .badge-logo {
     position: absolute;
-    width: 31%;
+    width: 55%;
+    height: 55%;
     border-radius: 50%;
+    transform: rotate(15deg);
     mix-blend-mode: multiply;
 
     animation-name: animaldrehen;
     animation-duration: 75s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
 }
+
+
 
 @keyframes animaldrehen {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
+
 
 /*                            Hero Section Kadir ENDE                   */
 
@@ -270,7 +269,7 @@ main {
 /* ==========================================================
    Slider Section
    ========================================================== */
-.slider-section>p {
+.slider-section > p {
     display: none;
 }
 
@@ -413,7 +412,7 @@ main {
 .faq-summary summary {
     display: flex;
     justify-content: space-between;
-    width: 307px;
+    gap: 8px;
     cursor: pointer;
     list-style: none;
     color: var(--secondary-brown);
@@ -577,12 +576,15 @@ main {
 /* ==========================================================
    Footer Section Tolga
    ========================================================== */
-
-.green-footer {
+footer {
+    padding-bottom: 90px;
+}
+ .green-footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    height: 134px;
+    gap: 16px;
+    min-height: 134px;
     padding: 30px var(--spacing-lg);
     background-color: var(--primary-green);
     color: white;
@@ -605,15 +607,21 @@ main {
 
 .socials-footer {
     display: flex;
+    flex-shrink: 0;
     gap: 16px;
     height: var(--l-mobile);
 }
 
 .yellow-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 48px;
+    gap: 8px;
     height: 90px;
     padding: var(--spacing-lg) 25px;
     background-color: var(--primary-yellow);
@@ -636,27 +644,30 @@ main {
         font-size: var(--h2-desktop);
     }
 
+    
     .site-header {
         justify-content: flex-start;
-        gap: 48px;
+        align-items: center;
+        gap: clamp(2rem, 7vw, 6.25rem);
         height: 128px;
-        padding: 7px 120px;
+        padding: 7px min(10vw, 120px);
+    }
+
+    .site-header > a > img {
+        height: clamp(3.5rem, 6vw, 4.75rem);
     }
 
     .header-nav {
         display: flex;
         align-self: center;
-        gap: 60px;
+        gap: clamp(1.5rem, 5vw, 4.5rem);
         padding: 0;
         list-style: none;
     }
 
     .header-nav a {
-        color: white;
-        font-family: var(--h2);
-        font-size: var(--l-mobile);
-        font-weight: 700;
-        text-decoration: none;
+        display: block;
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
     }
 
     .header-nav a:active {
@@ -670,9 +681,11 @@ main {
     .nav-hover-image {
         display: none;
         position: absolute;
+        width: 100%;
+        pointer-events: none;
     }
 
-    .hover-highlights .nav-hover-image {
+        .hover-highlights .nav-hover-image {
         top: 50%;
         left: 0;
     }
@@ -756,42 +769,37 @@ main {
     .btn-wrapper {
         padding-top: 32px;
     }
-/*Hero* min witdh 788 */
-    .hero-shape {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        object-position: right top;
+
+.hero-section {
+        height: 515px;
     }
 
-    .hero-text {
-        display: block;
-        top: 27%;
-        left: 7%;
-        width: 28%;
+    .hero-background-image {
+        background-position: top left, right center;
     }
 
-    .hero-title {
-        margin-bottom: 20px;
-    }
-
+ 
     .hero-badge {
-        top: 30%;
-        left: 35%;
-     
+        top: 180px;
+        left: 133px;
+        width: 160px;
+        height: 160px;
     }
 
-
+    footer {
+        padding-bottom: 0;
+    }
+    
     .green-footer {
         align-items: center;
         height: 152px;
-        padding: 60px 120px;
+        padding: 60px min(10vw, 120px);
     }
 
     .green-left {
         flex-direction: row;
         align-items: center;
-        gap: 72px;
+        gap: clamp(2rem, 5vw, 4.5rem);
     }
 
     .copyright-icon {
@@ -828,16 +836,12 @@ main {
         width: 50%;
     }
 
-
-    .hero-section {
-        max-width: 1440px;
+@media (min-width: 1440px) {
+    .site-header {
+        padding: 7px calc(50% - 600px);
     }
-
-    .hero-badge {
-      
-        left: 39%; 
-        top: 39%;
-
+        .green-footer {
+        padding: 60px calc(50% - 600px);
+    }
 }
-
 }
