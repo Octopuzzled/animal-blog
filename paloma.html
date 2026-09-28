@@ -115,14 +115,16 @@
                 <article class="before-tip">
                     <p class="text">
                         Okay, so you've seen it. Let's talk about what just
-                        happened. An octopus has <strong>three hearts</strong>: two pump blood
-                        through the gills, and the third takes care of the rest
-                        of the body. That <strong>blood is blue</strong>, thanks to a
-                        copper-based protein called hemocyanin. And here's my
-                        favorite part: <strong>the heart that serves the body actually
-                        pauses when the octopus swims</strong>. That's why they'd rather
-                        crawl. Honestly? Relatable. I also prefer not to do
-                        cardio every time I go out.
+                        happened. An octopus has <strong>three hearts</strong>:
+                        two pump blood through the gills, and the third takes
+                        care of the rest of the body. That
+                        <strong>blood is blue</strong>, thanks to a copper-based
+                        protein called hemocyanin. And here's my favorite part:
+                        <strong
+                            >the heart that serves the body actually pauses when
+                            the octopus swims</strong
+                        >. That's why they'd rather crawl. Honestly? Relatable.
+                        I also prefer not to do cardio every time I go out.
                     </p>
 
                     <p class="text">
@@ -153,20 +155,21 @@
 
                     <p class="text">
                         What gets me most is how short their lives are. Most
-                        octopus species <strong>live only one to two years</strong>, and many
+                        octopus species
+                        <strong>live only one to two years</strong>, and many
                         spend that time alone. No parents to teach them, no
                         school, no YouTube tutorials. Everything they know about
                         hunting, hiding, and problem-solving, they figure out on
                         their own. And still they use tools, recognize
                         individual humans, and sometimes squirt water at the
-                        ones they don't like. There are around <strong>300 known
-                        species</strong>, from the tiny star-sucker pygmy octopus to the
-                        giant Pacific octopus, which can have an arm span of
-                        several meters. Some mimic poisonous fish to stay safe;
-                        others carry coconut shells around as mobile homes.
-                        Every time I read about them, I find one more reason to
-                        believe they're secretly running a very small, very wet
-                        civilization down there.
+                        ones they don't like. There are around
+                        <strong>300 known species</strong>, from the tiny
+                        star-sucker pygmy octopus to the giant Pacific octopus,
+                        which can have an arm span of several meters. Some mimic
+                        poisonous fish to stay safe; others carry coconut shells
+                        around as mobile homes. Every time I read about them, I
+                        find one more reason to believe they're secretly running
+                        a very small, very wet civilization down there.
                     </p>
                 </article>
             </section>
@@ -208,13 +211,34 @@
                     Follow me for more content like this, and share the article
                     with your fellow sea nerds!
                 </p>
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
-                <button class="btn-default">
-                    <img
-                        src="./assets/icons/share-yellow.svg"
-                        alt="Share icon"
-                    />Share
-                </button>
+                <div class="share-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 30 0 C 0 30, 10 100, 100 100" />
+                    </svg>
+                </div>
+                <!-- <button class="btn-default">
+                    <img src="./assets/icons/share-yellow.svg" alt="" />Share
+                </button> -->
+                <input type="checkbox" id="share-toggle" />
+                <label class="btn-default share-label" for="share-toggle"
+                    ><img src="./assets/icons/share-yellow.svg" alt="" /> Share
+                </label>
+                <div class="link-wrapper">
+                    <img src="./assets/icons/share.svg" alt="" />
+                    <ul class="share-links">
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://wa.me/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >WhatsApp</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
 
