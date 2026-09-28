@@ -133,7 +133,10 @@ main {
 /* ==========================================================
    Header Section Tolga
    ========================================================== */
-.site-header {
+.site-header > a {
+    display: flex;
+}
+   .site-header {
     display: flex;
     justify-content: center;
     height: 70px;
@@ -141,7 +144,7 @@ main {
     padding: 7px 0;
 }
 
-.site-header > img {
+.site-header > a > img {
     height: 56px;
 }
 
@@ -650,7 +653,7 @@ footer {
         padding: 7px min(10vw, 120px);
     }
 
-    .site-header > img {
+    .site-header > a > img {
         height: clamp(3.5rem, 6vw, 4.75rem);
     }
 
@@ -663,6 +666,7 @@ footer {
     }
 
     .header-nav a {
+        display: block;
         font-size: clamp(1.125rem, 2vw, 1.5rem);
     }
 
@@ -678,6 +682,7 @@ footer {
         display: none;
         position: absolute;
         width: 100%;
+        pointer-events: none;
     }
 
         .hover-highlights .nav-hover-image {
