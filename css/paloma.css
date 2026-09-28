@@ -220,9 +220,7 @@ main {
     width: 24px;
 } */
 
-#share-toggle {
-    visibility: hidden;
-
+.share-label {
     grid-column: 2;
     grid-row: 3 / 5;
 
@@ -233,15 +231,91 @@ main {
     gap: 8px;
 
     letter-spacing: 5%;
+
+    transition: width 0.3s;
+}
+
+#share-toggle:checked + .share-label {
+    width: 128px;
+}
+
+#share-toggle:checked + .share-label img {
+    display: none;
+}
+
+
+#share-toggle:checked ~ .link-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+#share-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.link-wrapper {
+    grid-column: 3;
+    grid-row: 3 / 5;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s, visibility 0.3s;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 16px;
+}
+
+.link-wrapper img {
+    width: 24px;
 }
 
 .share-links {
-    visibility: hidden;
+    list-style: none;
+    font-size: 18px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* ==========================================================
    Mediaqueries
    ========================================================== */
+@media (max-width: 368px) {
+    .share {
+    grid-template-columns: 40px auto minmax(0, 1fr);
+    overflow: hidden;
+}
+
+.share-arrow::after {
+    right: -2px;
+    bottom: -6px;
+    width: 12px;
+    height: 12px;
+}
+
+.share-arrow {
+    margin-right: 4px;
+}
+
+.link-wrapper {
+    padding-left: 6px;
+}
+
+.share-links {
+    font-size: 16px;
+    padding-left: 4px;
+}
+}
+
 @media (min-width: 788px) {
     .text {
         font-size: 20px;
