@@ -68,6 +68,25 @@ main {
     width: auto;
     height: 20px;
 }
+.meta-daten img[src*="eyeglasses_2"] {
+    width: 20px;
+    height: 7px;
+}
+
+.meta-daten img[src*="calendar_month"] {
+    width: 16px;
+    height: 18px;
+}
+
+.meta-daten img[src*="visibility"] {
+    width: 20px;
+    height: 14px;
+}
+
+.meta-daten img[src*="share"] {
+    width: 16px;
+    height: 18px;
+}
 
 .autor-head {
     display: flex;
@@ -273,6 +292,12 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.divider-icon {
+    flex-shrink: 0;
+    width: clamp(24px, 4vw, 32px);
+    height: clamp(24px, 4vw, 32px);
 }
 
 .shared-links {
