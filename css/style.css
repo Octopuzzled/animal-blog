@@ -409,7 +409,7 @@ main {
 .faq-summary summary {
     display: flex;
     justify-content: space-between;
-    width: 307px;
+    gap: 8px;
     cursor: pointer;
     list-style: none;
     color: var(--secondary-brown);
