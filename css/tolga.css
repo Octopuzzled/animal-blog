@@ -1,0 +1,376 @@
+/* ==========================================================
+   Blog Post Page (Mount Fuji)
+   Loaded after style.css. Header, footer and design tokens
+   (colours, fonts, spacing) come from there.
+   ========================================================== */
+main {
+    color: var(--secondary-brown);
+    font-family: var(--p);
+    line-height: 1.4;
+}
+
+/* ==========================================================
+   Head Area
+   ========================================================== */
+.head-area {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: clamp(2.5rem, 6vw, 5rem);
+}
+
+.textfild-head {
+    min-width: 0;
+}
+
+.textfild-head .above-h1 {
+    margin-bottom: 5px;
+    color: var(--primary-green);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
+
+.textfild-head h1 {
+    margin-bottom: 15px;
+    color: var(--primary-yellow);
+    font-family: var(--h2);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.textfild-head .head-intro {
+    margin-bottom: 24px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: 400;
+    text-wrap: balance;
+}
+
+/* Icon + visible text, so the meta data is readable and not only in alt text */
+.meta-daten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+}
+
+.meta-daten > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.meta-daten img {
+    flex-shrink: 0;
+    width: auto;
+    height: 20px;
+}
+.meta-daten img[src*="eyeglasses_2"] {
+    width: 20px;
+    height: 7px;
+}
+
+.meta-daten img[src*="calendar_month"] {
+    width: 16px;
+    height: 18px;
+}
+
+.meta-daten img[src*="visibility"] {
+    width: 20px;
+    height: 14px;
+}
+
+.meta-daten img[src*="share"] {
+    width: 16px;
+    height: 18px;
+}
+
+.autor-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+    text-align: center;
+    line-height: 1.35;
+}
+
+.profil-bild {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.autor-name {
+    margin-bottom: 2px;
+    font-family: var(--h2);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.autor-rolle {
+    margin-bottom: 15px;
+    font-family: var(--h2);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.autor-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ==========================================================
+   Main Content
+   ========================================================== */
+.main-content {
+    --text-width: 820px;
+    --media-width: 1050px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    padding-top: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 80px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Text stays at a comfortable line length; the video may be wider */
+.main-content > p,
+.main-content > article {
+    width: 100%;
+    max-width: var(--text-width);
+}
+
+.standout-article {
+    font-weight: 700;
+}
+
+.main-content ol {
+    padding-left: 24px;
+}
+
+.main-content li {
+    margin-bottom: 15px;
+}
+
+.main-content li:last-child {
+    margin-bottom: 0;
+}
+
+.video-container {
+    width: 100%;
+    max-width: var(--media-width);
+    aspect-ratio: 16 / 9;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ==========================================================
+   Pro Tipps
+   ========================================================== */
+.pro-tipps-box {
+    position: relative;
+    width: 100%;
+    max-width: var(--text-width);
+    margin: 50px auto;
+    padding: 40px 20px 30px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+}
+
+.pro-tipps-label {
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    width: 150px;
+    z-index: 10;
+}
+
+.useful-link {
+    color: var(--primary-green);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   Share
+   ========================================================== */
+.share-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.follow-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 1;
+    font-family: var(--h2);
+    font-size: clamp(1.125rem, 3.5vw + 0.5rem, 1.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.follow-me br {
+    display: none;
+}
+
+.desktop-arrow {
+    display: none;
+}
+
+.mobile-arrow {
+    width: 40px;
+    transform: translateY(50px);
+}
+
+/* Visually hidden, but still reachable with the keyboard */
+.share-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.share-container-clickable {
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.share-checkbox:focus-visible + .share-container-clickable {
+    outline: 3px solid var(--primary-yellow);
+    outline-offset: 6px;
+    border-radius: 40px;
+}
+
+.button-close {
+    display: inline-flex;
+}
+
+.button-open {
+    display: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.share-checkbox:checked + .share-container-clickable .button-close {
+    display: none;
+}
+
+.share-checkbox:checked + .share-container-clickable .button-open {
+    display: flex;
+}
+
+.share-icon-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.divider-icon {
+    flex-shrink: 0;
+    width: clamp(24px, 4vw, 32px);
+    height: clamp(24px, 4vw, 32px);
+}
+
+.shared-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.shared-links a {
+    padding: 6px 8px;
+    color: var(--primary-green);
+    font-family: var(--h2);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   Mediaqueries
+   ========================================================== */
+@media (min-width: 788px) {
+    .main-content ol {
+        padding-left: 40px;
+    }
+
+    .pro-tipps-box {
+        padding: 40px 30px 30px;
+    }
+
+    .share-wrapper {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .follow-me {
+        display: block;
+        text-align: center;
+    }
+
+    .follow-me br {
+        display: inline;
+    }
+
+    .desktop-arrow {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: -10px;
+        width: 100px;
+    }
+
+    .mobile-arrow {
+        display: none;
+    }
+
+    .shared-links {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-area {
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .textfild-head {
+        flex: 1;
+    }
+
+    .autor-head {
+        flex: 0 0 320px;
+    }
+}
