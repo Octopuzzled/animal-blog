@@ -133,7 +133,7 @@ main {
 /* ==========================================================
    Header Section Tolga
    ========================================================== */
-.site-header {
+.site-header a {
     display: flex;
     justify-content: center;
     height: 70px;
