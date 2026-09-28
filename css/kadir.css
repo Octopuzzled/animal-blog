@@ -1,0 +1,817 @@
+
+/* ==========================================================
+   LOCAL FONT
+   ========================================================== */
+
+@font-face {
+    font-family: 'Arima';
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* ==========================================================
+   0. ROOT VARIABLES
+   ========================================================== */
+
+:root {
+    --primary-yellow: #F1C953;
+    --primary-green: #2D936C;
+    --secondary-brown: rgba(84, 55, 13, 1);
+    --secondary-light: rgb(255, 255, 255);
+    --secondary-grey: rgba(115, 115, 115, 1);
+    --stats-blue: #2F80ED;
+
+    --h2: 'Georgia', serif;
+    --p: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
+/* ==========================================================
+   GENERAL RESET
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--secondary-light);
+    font-family: var(--p);
+    color: var(--secondary-brown);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================================
+   1. MAIN HEADER
+   ========================================================== */
+
+.main-header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-green);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+
+    margin: 0 auto;
+    padding-inline: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header img {
+    height: 100%;
+    max-height: 72px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Mobilde menü gizli */
+.main-nav,
+.header-nav {
+    display: none;
+}
+
+
+/* ==========================================================
+   2. CONTENT WRAPPER
+   ========================================================== */
+
+.content-wrapper {
+    width: 100%;
+    max-width: 375px;
+
+    margin: 0 auto;
+    padding-inline: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* ==========================================================
+   3. INTRO SECTION
+   ========================================================== */
+
+.intro-section {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.category-tag {
+    font-size: 12px;
+    color: var(--primary-green);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h1.main-title {
+    font-family: var(--h2);
+    font-size: 26px;
+    color: var(--primary-yellow);
+    line-height: 1.2;
+
+    margin: 12px 0;
+}
+
+.intro-text {
+    font-size: 14px;
+    color: var(--secondary-brown);
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* ==========================================================
+   4. BLOG META
+   ========================================================== */
+
+.blog-meta-bar {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px 24px;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 100%;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+    color: var(--secondary-brown);
+}
+
+.icons {
+    width: 10px;
+    height: 10px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* ==========================================================
+   5. AUTHOR CARD
+   ========================================================== */
+
+.author-card {
+    width: 100%;
+    max-width: 345px;
+
+    margin: 0 auto;
+
+    height: fit-content;
+
+    padding: 16px 8px;
+
+    background-color:
+        color-mix(
+            in srgb,
+            var(--primary-green) 20%,
+            transparent
+        );
+
+    border-radius: 30px;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 16px;
+}
+
+.author-avatar-wrapper {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-avatar {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: var(--secondary-brown);
+    font-family: var(--h2);
+
+    line-height: 1.2;
+}
+
+.author-title {
+    font-size: 18px;
+    color: var(--secondary-grey);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-top: -8px;
+}
+
+.author-bio {
+    font-size: 16px;
+    color: var(--secondary-brown);
+
+    line-height: 1.6;
+    text-align: center;
+
+    padding-inline: 8px;
+}
+
+
+/* ==========================================================
+   6. CHART SECTION
+   ========================================================== */
+
+.chart-section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+.blog-chart-img {
+    width: 100%;
+    max-width: 640px;
+
+    margin: 15px auto;
+
+    border-radius: 20px;
+}
+
+.chart-desc,
+.stats-text {
+    font-size: 14px;
+    color: var(--secondary-grey);
+
+    line-height: 1.6;
+    text-align: left;
+}
+
+.popular-activities h3 {
+    font-size: 18px;
+    color: var(--secondary-brown);
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   7. SHARE / CTA
+   ========================================================== */
+
+.cta-section {
+    text-align: center;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    width: 100%;
+}
+
+.cta-text {
+    font-size: 14px;
+    color: var(--secondary-brown);
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.cta-interactive-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 480px;
+    height: 70px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: visible;
+}
+
+
+/* Sarı ok */
+
+.cta-arrow {
+    position: absolute;
+
+    top: -22px;
+    left: -10px;
+
+    width: 50px;
+    height: auto;
+
+    z-index: 15;
+}
+
+
+/* Share button */
+
+.share-btn {
+    position: relative;
+    z-index: 10;
+
+    background-color: var(--primary-green);
+    color: var(--primary-yellow);
+
+    height: 48px;
+
+    padding-inline: 35px;
+
+    border-radius: 40px;
+    border: none;
+
+    cursor: pointer;
+
+    font-family: 'Arima', var(--p);
+    font-size: 24px;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+    line-height: 120%;
+
+    margin-left: 60px;
+
+    transition: transform 150ms ease;
+}
+
+.share-btn .btn-icon {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+
+    border-radius: 0 !important;
+}
+
+.share-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* ==========================================================
+   SHARE LINKS
+   ========================================================== */
+
+.share-links-container {
+    display: flex;
+    align-items: center;
+
+    gap: 42px;
+
+    position: absolute;
+    left: 80px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 1;
+
+    transition:
+        opacity 400ms ease,
+        transform 400ms cubic-bezier(0.25, 1, 0.5, 1),
+        visibility 400ms;
+}
+
+.cta-interactive-container:hover .share-links-container,
+.share-btn:focus + .share-links-container,
+.share-links-container:hover {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translate(150px, 5%);
+}
+
+.share-links-icon {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+.share-links-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 4px;
+}
+
+.share-links-text a {
+    color: var(--primary-green);
+
+    font-family: var(--p);
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   GREEN FOOTER
+   ========================================================== */
+.site-footer {
+    width: 100%;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+.green-footer {
+    background-color: var(--primary-green);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 16px 18px;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.footer-info p {
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-light);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1px;
+    color: var(--secondary-light);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.copyright img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.socials-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.socials-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-footer img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.yellow-footer {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    background-color: var(--primary-yellow);
+    padding: 25px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.yellow-footer img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+/* ==========================================================
+   10. TABLET / DESKTOP — 788px+
+   ========================================================== */
+
+@media (min-width: 788px) {
+
+    /* Başlık */
+
+    h1,
+    h1.main-title {
+        font-size: 38px !important;
+    }
+
+
+    /* Ana içerik */
+
+    .content-wrapper {
+        min-width: 788px;
+    }
+
+
+    /* Intro */
+
+    .intro-text {
+        font-size: 28px;
+        line-height: 110%;
+    }
+
+
+    /* İki kolonlu alanlar */
+
+    .desktop-row-top,
+    .desktop-row-bottom {
+        display: flex;
+
+        justify-content: space-between;
+
+        gap: 40px;
+    }
+
+    .intro-section,
+    .stats-section,
+    .popular-activities {
+        flex: 2;
+    }
+
+    .author-card {
+        flex: 1;
+        max-width: 300px;
+    }
+
+
+    /* Başlıklar */
+
+    h3 {
+        font-size: 20px;
+        text-align: left !important;
+    }
+
+
+    /* Mobil sarı footer gizlenir */
+
+    .yellow-footer {
+        display: none !important;
+    }
+
+
+    /* ======================================================
+       HEADER DESKTOP
+       ====================================================== */
+
+    .header-container {
+        display: flex;
+
+        justify-content: flex-start;
+
+        gap: 60px;
+
+        max-width: 1000px;
+
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        display: flex !important;
+
+        list-style: none;
+
+        gap: 40px;
+
+        align-items: center;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav li {
+        position: relative;
+    }
+
+    .main-nav li a {
+        color: var(--secondary-light);
+
+        text-decoration: none;
+
+        font-size: 18px;
+        font-weight: 700;
+
+        display: block;
+    }
+
+    .nav-hover-image {
+        position: absolute;
+
+        bottom: -15px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 100%;
+        max-width: 60px;
+        height: auto;
+
+        opacity: 0;
+
+        transition:
+            opacity 0.2s ease,
+            bottom 0.2s ease;
+
+        pointer-events: none;
+    }
+
+    .main-nav li:hover .nav-hover-image {
+        opacity: 1;
+        bottom: -8px;
+    }
+
+
+    /* ======================================================
+       GREEN FOOTER DESKTOP
+       ====================================================== */
+
+    .site-footer {
+    width: 100%;
+    align-self: stretch;
+}
+
+.green-footer {
+    width: 100%;
+    padding: 28px 40px 18px;
+}
+
+.footer-content {
+    width: 100%;
+    justify-content: space-between;
+    }
+}
+
+/* ==========================================================
+   11. LARGE DESKTOP — 1200px+
+   ========================================================== */
+
+@media (min-width: 1200px) {
+
+    /* Ana içerik */
+
+    .content-wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+
+    /* Desktop satırları */
+
+    .desktop-row-top,
+    .desktop-row-bottom {
+        align-items: flex-start;
+
+        margin-top: 30px;
+    }
+
+
+    /* Intro */
+
+    .intro-section {
+        text-align: left;
+    }
+
+    h1.main-title {
+        font-weight: 400;
+
+        margin-bottom: 24px;
+    }
+
+
+    /* Meta */
+
+    .blog-meta-bar {
+        flex-wrap: nowrap !important;
+
+        justify-content: flex-start;
+
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    /* Chart */
+
+    .chart-section-one {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .chart-desc-top {
+        width: 100% !important;
+
+        font-size: 24px !important;
+        line-height: 120% !important;
+
+        color: #3D3D3D !important;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .chart-desc,
+    .stats-text {
+        width: 100% !important;
+
+        font-size: 16px;
+
+        line-height: 1.6;
+
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        text-align: left;
+    }
+
+
+    /* Body */
+
+    body {
+        padding-bottom: 0;
+    }
+
+
+    /* Stats */
+
+    .stats-section,
+    .popular-activities {
+        gap: 15px;
+    }
+
+    .stats-section h3,
+    .popular-activities h3 {
+        font-weight: 700;
+
+        margin: 0;
+    }
+
+}
