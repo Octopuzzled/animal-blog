@@ -133,10 +133,11 @@ main {
 /* ==========================================================
    Header Section Tolga
    ========================================================== */
-.site-header > a {
+.site-header>a {
     display: flex;
 }
-   .site-header {
+
+.site-header {
     display: flex;
     justify-content: center;
     height: 70px;
@@ -144,7 +145,7 @@ main {
     padding: 7px 0;
 }
 
-.site-header > a > img {
+.site-header>a>img {
     height: 56px;
 }
 
@@ -152,13 +153,13 @@ main {
     display: none;
 }
 
- .header-nav a {
+.header-nav a {
     color: white;
     font-family: var(--h2);
     font-size: var(--l-mobile);
     font-weight: 700;
     text-decoration: none;
- }
+}
 
 /* ==========================================================
    Reusable CSS
@@ -195,81 +196,138 @@ main {
     cursor: pointer;
 }
 
-/*                                     Hero Section Kadir                        */
+/* ==========================================================
+   Hero Section Kadir
+   ========================================================== */
 
 .hero-section {
     position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #F1C953;
-    height: 515px;
+    height: 300px;
+    /* Mobilde çok yüksek olmaması için düşürüldü */
+    margin-inline: auto;
     overflow: hidden;
-
+    background-color: #f4f4f4;
+    /* Resim yüklenene kadar görünürlük testi için gri arka plan */
 }
 
 .hero-background-image {
-    height: 100%;
-    background-image: url('../assets/icons/vector-17.png'),
-        url('../assets/images/cat-landing.jpg');
-    background-position: top left, 100% center;
-    background-position:top left,right center;
-    background-size: auto, cover;
-    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    background: url('../assets/images/cat-landing.jpg') center / cover no-repeat;
+    /* Yol güncellendi */
+    z-index: 1;
 }
-
 
 .hero-badge {
     position: absolute;
-    top: 180px;
-    left: 133px;
+    top: 50%;
+    /* Mobilde dikeyde tam ortalamak için */
+    left: 50%;
+    /* Mobilde yatayda tam ortalamak için */
     transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    /* Biraz daha belirgin yapıldı */
+    height: 140px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 4px 10.8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.hero-shape {
+    position: absolute;
+   
+    width: 60%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+.hero-text {
+    display: none;
+    /* Mobilde gizli kalma kuralı korundu */
+    position: absolute;
+    top: 27%;
+    /* Yukarıdan hizalama ölçüsü */
+    left: 7%;
+    /* Soldan hizalama ölçüsü */
+    width: 28%;
+    /* Genişlik ölçüsü */
+    z-index: 5;
+    /* z-index: 2 değeri, sarı şeklin (z-index: 1) üstüne çıkması için 5 yapıldı */
+}
+
+.hero-title {
+    font-family: var(--h2);
+    font-size: clamp(28px, 3.6vw, var(--h2-desktop));
+    font-weight: 700;
+    color: var(--secondary-brown);
+}
+
+.hero-description {
+    font-family: var(--p);
+    font-size: clamp(14px, 1.94vw, 28px);
+    font-weight: 500;
+    line-height: 110%;
+    color: var(--secondary-brown);
+}
+
+.hero-badge {
+    position: absolute;
+    top: 140px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
     background-color: var(--primary-green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
-    
-
-
+    z-index: 10;
 }
 
 .badge-logo {
     position: absolute;
-    width: 55%;
-    height: 55%;
+    width: 65%;
+    /* %31 çok küçüktü, kutuyu güzel kaplasın diye %65 yapıldı */
+    height: 65%;
+    /* Logonun basık durmaması için yükseklik eşitlendi */
+    object-fit: contain;
+    /* Logonun sünmesi/bozulması engellendi */
     border-radius: 50%;
-    transform: rotate(15deg);
     mix-blend-mode: multiply;
 
     animation-name: animaldrehen;
     animation-duration: 75s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-
 }
-
-
 
 @keyframes animaldrehen {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
+/* ==========================================================
+   Hero Section Kadir ENDE
+   ========================================================== */
 
-/*                            Hero Section Kadir ENDE                   */
 
 
 /* ==========================================================
    Slider Section
    ========================================================== */
-.slider-section > p {
+.slider-section>p {
     display: none;
 }
 
@@ -579,7 +637,8 @@ main {
 footer {
     padding-bottom: 90px;
 }
- .green-footer {
+
+.green-footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -644,7 +703,7 @@ footer {
         font-size: var(--h2-desktop);
     }
 
-    
+
     .site-header {
         justify-content: flex-start;
         align-items: center;
@@ -653,7 +712,7 @@ footer {
         padding: 7px min(10vw, 120px);
     }
 
-    .site-header > a > img {
+    .site-header>a>img {
         height: clamp(3.5rem, 6vw, 4.75rem);
     }
 
@@ -685,7 +744,7 @@ footer {
         pointer-events: none;
     }
 
-        .hover-highlights .nav-hover-image {
+    .hover-highlights .nav-hover-image {
         top: 50%;
         left: 0;
     }
@@ -770,26 +829,48 @@ footer {
         padding-top: 32px;
     }
 
-.hero-section {
+    .hero-section {
         height: 515px;
     }
 
-    .hero-background-image {
-        background-position: top left, right center;
+
+     .hero-text {
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 10%;         
+        width: 40%; 
+        z-index: 5; 
     }
 
- 
     .hero-badge {
-        top: 180px;
-        left: 133px;
-        width: 160px;
-        height: 160px;
+        position: absolute;
+        top: 35%; 
+        left: 48%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
     }
+
+    .hero-title {
+        font-family: var(--h2);       /* Arima */
+        font-size: var(--h2-desktop); /* 52px */
+        color: var(--secondary-brown);
+        margin-bottom: 28px;          /* Başlık ile altındaki yazı arasındaki boşluk */
+        font-weight: 700;
+    }
+.hero-description {
+        font-family: var(--p);        /* Palanquin */
+        font-size: var(--l-mobile);   /* 24px - Projenize göre masaüstü açıklama boyutu */
+        color: var(--secondary-brown);
+        font-weight: 500;
+        line-height: 110%;            /* Gönderdiğiniz ilk mobil kodlardaki standart oran */
+    }
+
 
     footer {
         padding-bottom: 0;
     }
-    
+
     .green-footer {
         align-items: center;
         height: 152px;
@@ -836,12 +917,13 @@ footer {
         width: 50%;
     }
 
-@media (min-width: 1440px) {
-    .site-header {
-        padding: 7px calc(50% - 600px);
-    }
+    @media (min-width: 1440px) {
+        .site-header {
+            padding: 7px calc(50% - 600px);
+        }
+
         .green-footer {
-        padding: 60px calc(50% - 600px);
+            padding: 60px calc(50% - 600px);
+        }
     }
-}
 }

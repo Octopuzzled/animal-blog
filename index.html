@@ -28,14 +28,29 @@
         </ul>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-badge">
-            <img src="./assets/icons/logo-mogo.png" alt="Animal Logo" class="badge-logo" />
-            
-            <img src="./assets/icons/animal-logo-neu.png" alt="Animal Blog Text" class="badge-logo" />
-        </div>
-        <div class="hero-background-image"></div>
-    </section>
+   <!-- ==========================================================
+   Hero Section (Kapadokya Yazısı ve Katman Düzenlemesi)
+   ========================================================== -->
+<section class="hero-section">
+    <!-- En arka katman: Kedi resmi -->
+    <div class="hero-background-image" aria-hidden="true"></div>
+    
+    <!-- Orta katman: Sarı dalga şekli (Yol hatası giderildi, nokta eklendi) -->
+    <img class="hero-shape" src="./assets/icons/vector-16.png" alt="" aria-hidden="true" />
+
+    <!-- Ön katman: Sarı alanın üstüne gelecek Kapadokya Başlık ve Açıklaması -->
+    <div class="hero-text">
+        <h1 class="hero-title">Animal Blog</h1>
+        <p class="hero-description">
+          Wildlife on planet earth seems endlessly diverse. Some are cute and cuddly.
+        </p>
+    </div>
+
+    <div class="hero-badge">
+        <img src="./assets/icons/animal-logo-neu.png" alt="Animal Blog" class="badge-logo" />
+    </div>
+</section>
+
 
     <main>
         <section class="slider-section" id="highlights">
