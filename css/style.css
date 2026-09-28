@@ -852,18 +852,18 @@ footer {
     }
 
     .hero-title {
-        font-family: var(--h2);       /* Arima */
-        font-size: var(--h2-desktop); /* 52px */
+        font-family: var(--h2);
+        font-size: var(--h2-desktop);
         color: var(--secondary-brown);
-        margin-bottom: 28px;          /* Başlık ile altındaki yazı arasındaki boşluk */
+        margin-bottom: 28px;
         font-weight: 700;
     }
 .hero-description {
-        font-family: var(--p);        /* Palanquin */
-        font-size: var(--l-mobile);   /* 24px - Projenize göre masaüstü açıklama boyutu */
+        font-family: var(--p);
+        font-size: var(--l-mobile);
         color: var(--secondary-brown);
         font-weight: 500;
-        line-height: 110%;            /* Gönderdiğiniz ilk mobil kodlardaki standart oran */
+        line-height: 110%;
     }
 
 
