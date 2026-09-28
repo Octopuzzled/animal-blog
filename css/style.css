@@ -141,9 +141,21 @@ main {
     padding: 7px 0;
 }
 
+.site-header > img {
+    height: 56px;
+}
+
 .header-nav {
     display: none;
 }
+
+ .header-nav a {
+    color: white;
+    font-family: var(--h2);
+    font-size: var(--l-mobile);
+    font-weight: 700;
+    text-decoration: none;
+ }
 
 /* ==========================================================
    Reusable CSS
@@ -562,11 +574,12 @@ main {
    Footer Section Tolga
    ========================================================== */
    
-.green-footer {
+ .green-footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    height: 134px;
+    gap: 16px;
+    min-height: 134px;
     padding: 30px var(--spacing-lg);
     background-color: var(--primary-green);
     color: white;
@@ -589,15 +602,21 @@ main {
 
 .socials-footer {
     display: flex;
+    flex-shrink: 0;
     gap: 16px;
     height: var(--l-mobile);
 }
 
 .yellow-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 48px;
+    gap: 8px;
     height: 90px;
     padding: var(--spacing-lg) 25px;
     background-color: var(--primary-yellow);
@@ -620,27 +639,29 @@ main {
         font-size: var(--h2-desktop);
     }
 
+    
     .site-header {
         justify-content: flex-start;
-        gap: 48px;
+        align-items: center;
+        gap: clamp(2rem, 7vw, 6.25rem);
         height: 128px;
-        padding: 7px 120px;
+        padding: 7px min(10vw, 120px);
+    }
+
+    .site-header > img {
+        height: clamp(3.5rem, 6vw, 4.75rem);
     }
 
     .header-nav {
         display: flex;
         align-self: center;
-        gap: 60px;
+        gap: clamp(1.5rem, 5vw, 4.5rem);
         padding: 0;
         list-style: none;
     }
 
     .header-nav a {
-        color: white;
-        font-family: var(--h2);
-        font-size: var(--l-mobile);
-        font-weight: 700;
-        text-decoration: none;
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
     }
 
     .header-nav a:active {
@@ -654,6 +675,7 @@ main {
     .nav-hover-image {
         display: none;
         position: absolute;
+        width: 100%;
     }
 
         .hover-highlights .nav-hover-image {
@@ -760,13 +782,13 @@ main {
     .green-footer {
         align-items: center;
         height: 152px;
-        padding: 60px 120px;
+        padding: 60px min(10vw, 120px);
     }
 
     .green-left {
         flex-direction: row;
         align-items: center;
-        gap: 72px;
+        gap: clamp(2rem, 5vw, 4.5rem);
     }
 
     .copyright-icon {
@@ -803,5 +825,12 @@ main {
         width: 50%;
     }
 
-
+@media (min-width: 1440px) {
+    .site-header {
+        padding: 7px calc(50% - 600px);
+    }
+        .green-footer {
+        padding: 60px calc(50% - 600px);
+    }
+}
 }
