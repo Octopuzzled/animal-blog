@@ -243,7 +243,6 @@ main {
     display: none;
 }
 
-
 #share-toggle:checked ~ .link-wrapper {
     visibility: visible;
     opacity: 1;
@@ -264,7 +263,9 @@ main {
     visibility: hidden;
     opacity: 0;
 
-    transition: opacity 0.3s, visibility 0.3s;
+    transition:
+        opacity 0.3s,
+        visibility 0.3s;
 
     display: flex;
     align-items: center;
@@ -286,34 +287,40 @@ main {
     gap: 8px;
 }
 
+.green-footer p,
+.green-footer a {
+    color: white;
+    font-family: var(--p);
+}
+
 /* ==========================================================
    Mediaqueries
    ========================================================== */
 @media (max-width: 368px) {
     .share {
-    grid-template-columns: 40px auto minmax(0, 1fr);
-    overflow: hidden;
-}
+        grid-template-columns: 40px auto minmax(0, 1fr);
+        overflow: hidden;
+    }
 
-.share-arrow::after {
-    right: -2px;
-    bottom: -6px;
-    width: 12px;
-    height: 12px;
-}
+    .share-arrow::after {
+        right: -2px;
+        bottom: -6px;
+        width: 12px;
+        height: 12px;
+    }
 
-.share-arrow {
-    margin-right: 4px;
-}
+    .share-arrow {
+        margin-right: 4px;
+    }
 
-.link-wrapper {
-    padding-left: 6px;
-}
+    .link-wrapper {
+        padding-left: 6px;
+    }
 
-.share-links {
-    font-size: 16px;
-    padding-left: 4px;
-}
+    .share-links {
+        font-size: 16px;
+        padding-left: 4px;
+    }
 }
 
 @media (min-width: 788px) {
@@ -378,7 +385,6 @@ main {
         padding-top: 30px;
         padding-bottom: 45px;
 
-        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         display: flex;
         gap: 40px;
     }
