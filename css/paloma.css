@@ -203,7 +203,7 @@ main {
     clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
-.share button {
+/* .share button {
     grid-column: 2;
     grid-row: 3 / 5;
 
@@ -218,6 +218,25 @@ main {
 
 .share button > img {
     width: 24px;
+} */
+
+#share-toggle {
+    visibility: hidden;
+
+    grid-column: 2;
+    grid-row: 3 / 5;
+
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    letter-spacing: 5%;
+}
+
+.share-links {
+    visibility: hidden;
 }
 
 /* ==========================================================
