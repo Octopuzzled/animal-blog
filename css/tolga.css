@@ -1,8 +1,3 @@
-/* ==========================================================
-   Blog Post Page (Mount Fuji)
-   Loaded after style.css. Header, footer and design tokens
-   (colours, fonts, spacing) come from there.
-   ========================================================== */
 main {
     color: var(--secondary-brown);
     font-family: var(--p);
@@ -49,7 +44,6 @@ main {
     text-wrap: balance;
 }
 
-/* Icon + visible text, so the meta data is readable and not only in alt text */
 .meta-daten {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +138,6 @@ main {
     line-height: 1.4;
 }
 
-/* Text stays at a comfortable line length; the video may be wider */
 .main-content > p,
 .main-content > article {
     width: 100%;
@@ -247,7 +240,6 @@ main {
     transform: translateY(50px);
 }
 
-/* Visually hidden, but still reachable with the keyboard */
 .share-checkbox {
     position: absolute;
     width: 1px;
