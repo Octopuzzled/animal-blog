@@ -225,28 +225,26 @@ main {
 
 .hero-badge {
     position: absolute;
-    top: 50%;
-    /* Mobilde dikeyde tam ortalamak için */
-    left: 50%;
-    /* Mobilde yatayda tam ortalamak için */
+    top: 35%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    width: 140px;
-    /* Biraz daha belirgin yapıldı */
-    height: 140px;
+    width: 120px;
+    height: 120px;
     background-color: var(--primary-green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -2px 4px 10.8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
     z-index: 10;
 }
 
 .hero-shape {
     position: absolute;
+    left: -10%;
 
     width: 60%;
-    height: 100%;
+    height: 60%;
     z-index: 2;
 }
 
@@ -280,19 +278,7 @@ main {
 }
 
 .hero-badge {
-    position: absolute;
-    top: 140px;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    background-color: var(--primary-green);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
-    z-index: 10;
+    
 }
 
 .badge-logo {
