@@ -726,8 +726,8 @@ footer {
         top: 35%;
         left: 40%;
         transform: translate(-50%, -50%);
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
         background-color: var(--primary-green);
         border-radius: 50%;
         display: flex;
@@ -735,6 +735,7 @@ footer {
         align-items: center;
         box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
         z-index: 10;
+        padding: 10px;
     }
 
     .hero-shape {
