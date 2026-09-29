@@ -3,6 +3,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
@@ -187,7 +188,8 @@ h1.main-title {
 .cta-interactive-container>img {
     display: flex;
     position: relative;
-    left: -20px; /* gestylt */
+    bottom: 25px; /*gestylt */
+    left: -80px; /* gestylt */
 }
 
 .share-btn {
