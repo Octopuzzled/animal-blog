@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pattaya Pulse Blog</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bambam Blog</title>
+    <link rel="icon" type="image/png" href="./assets/images/bambam-profi.png" />
     <link rel="stylesheet" href="./css/kadir.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/icons/favcat1.png">
 </head>
 
 <body>
@@ -33,43 +32,36 @@
         </div>
     </header>
 
-    <!-- Ana İçerik Alanı -->
     <main class="content-wrapper">
-
-        <!-- MASAÜSTÜNDE BİREBİR YAN YANA GELECEK GRUP (Başlık ve Yazar) -->
         <div class="desktop-row-top">
-            <!-- 2. Başlık ve Giriş Yazısı Bölümü -->
             <section class="intro-section">
                 <span class="category-tag">BAMBAM's CRAZY CAT LİFE</span>
                 <h1 class="main-title">Bambam's Daily Adventures: Treats, Naps and Trouble</h1>
                 <p class="intro-text">
                     From chasing mysterious shadows to stealing snacks, Bambam turns every ordinary day into a tiny
-                    adventure. Follow our curious black cat as he explores the house, investigates suspicious noises,
-                    and somehow ends up sleeping in the most unexpected places.
+                    adventure. Follow our curious black cat as he explores the house.
                 </p>
 
-                <!-- 3. İkonlu Bilgi Satırı -->
                 <div class="blog-meta-bar">
                     <div class="icon-item">
-                        <img src="./assets/icons/calendar_month.png" alt="Calendar" class="icons" />
+                        <img src="./assets/icons/calendar_month.svg" alt="Calendar" class="icons" />
                         <span>Date: 25.09.2026</span>
                     </div>
                     <div class="icon-item">
-                        <img src="./assets/icons/glasses.png" alt="Reading Time" class="icons" />
+                        <img src="./assets/icons/person_pin_green.svg" alt="Reading Time" class="icons" />
                         <span>Reading time: 57 min.</span>
                     </div>
                     <div class="icon-item">
-                        <img src="./assets/icons/eye.png" alt="Read Count" class="icons" />
+                        <img src="./assets/icons/eyeglasses_2.svg" alt="Read Count" class="icons" />
                         <span>Read: 1246</span>
                     </div>
                     <div class="icon-item">
-                        <img src="./assets/icons/share.png" alt="Shared Count" class="icons" />
+                        <img src="./assets/icons/share.svg" alt="Shared Count" class="icons" />
                         <span>Shared: 23423</span>
                     </div>
                 </div>
             </section>
 
-            <!-- 4. Yazar Kartı Bölümü -->
             <section class="author-card">
                 <div class="author-avatar-wrapper">
                     <img src="./assets/images/bambam-profi.png" alt="Tamara Wallker" class="author-avatar">
@@ -83,14 +75,12 @@
             </section>
         </div>
 
-        <!-- FİGMA PANELİNDEKİ BOYDAN BOYA UZANAN GENİŞ LOREM METNİ -->
         <p class="chart-desc-top">
             Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta
             scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
             malesuada. Ante in commodo porta scelerisque turpis gravida semper.
         </p>
 
-        <!-- 5. BÖLÜM: Rain periods in Pattaya (Orta Büyük Grafik) -->
         <section class="chart-section-one">
             <h3>Bambam's Daily Adventures </h3>
             <img src="./assets/icons/bambam-stat.png" alt="Rain periods in Pattaya" class="blog-chart-img" />
@@ -100,7 +90,6 @@
             </p>
         </section>
 
-        <!-- MASAÜSTÜNDE BİREBİR YAN YANA GELECEK GRUP (İki Alt Grafik) -->
         <div class="desktop-row-bottom">
             <!-- 6. BÖLÜM: Büyük İstatistik Alanı -->
             <section class="stats-section">
@@ -113,8 +102,6 @@
                     while maintaining its raw energy and authentic charm.
                 </p>
             </section>
-
-            <!-- 7. BÖLÜM: Popular Tourism Activities -->
             <section class="popular-activities">
                 <h3>Popular Tourism Activities</h3>
                 <img src="./assets/icons/bambam-stat3.png" alt="Popular Tourism Activities" class="blog-chart-img" />
@@ -125,95 +112,70 @@
             </section>
         </div>
 
-   <!-- 11. Buton ve Yönlendirme Alanı (Kedi Butonu ve Yanından Çıkacak Linkler) -->
         <section class="cta-section">
             <p class="cta-text">Follow me for more content like this, and share the article with your friends!</p>
-
             <div class="cta-interactive-container">
-                <!-- Sol taraftaki sarı ok -->
                 <img src="./assets/icons/yellow-arrow.png" alt="Arrow" class="cta-arrow" />
-                
-                <!-- Kedi butonun (Resimdeki gibi şeffaf kedi görselin) -->
-                <button class="share-btn">
-                    <img src="./assets/images/bambam-profi.png" alt="Share" class="btn-icon" />
-                      Share 
-                </button>
-
-                <!-- Tıklandığında kedi butonunun yanından fırlayacak olan paylaşım alanı -->
-                <div class="share-links-container">
-                    <!-- Üç noktalı paylaşım ikonun tam kedi resminin yanına yerleşti -->
-                    <img src="./assets/icons/share.png" alt="Share Icon" class="share-links-icon" />
-                    
-                    <div class="share-links-text">
-                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+                <input type="checkbox" id="share-toggle" class="share-checkbox">
+                <label for="share-toggle" class="share-container-clickable">
+                    <div class="share-btn">
+                        <img src="./assets/images/bambam-profi.png" alt="Share" class="btn-icon" />
+                        Share
                     </div>
-                </div>
+                    <div class="share-links-container">
+                        <img src="./assets/icons/share.svg" alt="Share Icon" class="share-links-icon" />
+
+
+                        <div class="share-links-text">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        </div>
+                    </div>
+                </label>
             </div>
         </section>
 
     </main>
 
     <footer class="site-footer">
-
-    <div class="green-footer">
-
-        <div class="footer-content">
-
-            <!-- Sol taraf -->
-            <div class="footer-info">
-                <p>Imprint</p>
-                <p>Cookie Preferences</p>
-
-                <div class="copyright">
-                    <img src="./assets/icons/copyright.svg" alt="Copyright">
-                    <span>Travel Blog 2026</span>
+        <div class="green-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Imprint</p>
+                    <p>Cookie Preferences</p>
+                    <div class="copyright">
+                        <img src="./assets/icons/copyright.svg" alt="Copyright">
+                        <span>Travel Blog 2026</span>
+                    </div>
+                </div>
+                <div class="socials-footer">
+                    <a href="#" aria-label="TikTok">
+                        <img src="./assets/icons/social_tiktok.svg" alt="TikTok">
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="./assets/icons/social_yt.svg" alt="YouTube">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="./assets/icons/social_fb.svg" alt="Facebook">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="./assets/icons/social_ig.svg" alt="Instagram">
+                    </a>
                 </div>
             </div>
-
-            <!-- Sağ taraf -->
-            <div class="socials-footer">
-
-                <a href="#" aria-label="TikTok">
-                    <img src="./assets/icons/social_tiktok.svg" alt="TikTok">
-                </a>
-
-                <a href="#" aria-label="YouTube">
-                    <img src="./assets/icons/social_yt.svg" alt="YouTube">
-                </a>
-
-                <a href="#" aria-label="Facebook">
-                    <img src="./assets/icons/social_fb.svg" alt="Facebook">
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <img src="./assets/icons/social_ig.svg" alt="Instagram">
-                </a>
-
-            </div>
-
         </div>
-
-    </div>
-
-    <div class="yellow-footer">
-
-    <a href="#" aria-label="Home">
-        <img src="./assets/icons/Home_green.svg" alt="Home">
-    </a>
-
-    <a href="#" aria-label="Rocket">
-        <img src="./assets/icons/rocket_launch_green.svg" alt="Rocket">
-    </a>
-
-    <a href="#" aria-label="FAQ">
-        <img src="./assets/icons/live_help_green.svg " alt="FAQ">
-    </a>
-
-    <a href="#" aria-label="Profile">
-        <img src="./assets/icons/person_pin_green.svg" alt="Profile">
-    </a>
-
-</div>
-
-</footer>
+        <div class="yellow-footer">
+            <a href="#" aria-label="Home">
+                <img src="./assets/icons/Home_green.svg" alt="Home">
+            </a>
+            <a href="#" aria-label="Rocket">
+                <img src="./assets/icons/rocket_launch_green.svg" alt="Rocket">
+            </a>
+            <a href="#" aria-label="FAQ">
+                <img src="./assets/icons/live_help_green.svg " alt="FAQ">
+            </a>
+            <a href="#" aria-label="Profile">
+                <img src="./assets/icons/person_pin_green.svg" alt="Profile">
+            </a>
+        </div>
+    </footer>
