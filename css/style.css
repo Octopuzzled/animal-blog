@@ -277,10 +277,6 @@ main {
     color: var(--secondary-brown);
 }
 
-.hero-badge {
-    
-}
-
 .badge-logo {
     position: absolute;
     width: 90%;
@@ -649,13 +645,13 @@ footer {
 }
 
 .green-left a {
-        color: inherit;
-        text-decoration: none;
-    }
+    color: inherit;
+    text-decoration: none;
+}
 
-    .green-left a:hover {
-        text-decoration: underline;
-    }
+.green-left a:hover {
+    text-decoration: underline;
+}
 
 .copyright-icon {
     display: flex;
@@ -695,6 +691,59 @@ footer {
 @media (min-width: 788px) {
     main {
         padding-inline: max(120px, calc(50% - 720px));
+    }
+
+    .hero-section {
+        height: 515px;
+    }
+
+    .hero-text {
+        display: block;
+        position: absolute;
+        top: 5%;
+        z-index: 5;
+        padding-inline: 10px;
+    }
+
+    .hero-title {
+        font-family: var(--h2);
+        font-size: var(--h2-desktop);
+        color: var(--secondary-brown);
+        margin-bottom: 28px;
+        font-weight: 700;
+    }
+
+    .hero-description {
+        font-family: var(--p);
+        font-size: var(--l-mobile);
+        color: var(--secondary-brown);
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    .hero-badge {
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        background-color: var(--primary-green);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -2px 4px 10.8px 0px rgba(116, 33, 40, 0.4);
+        z-index: 10;
+    }
+
+    .hero-shape {
+        position: absolute;
+        left: -40%;
+
+        width: 100%;
+        height: 100%;
+        z-index: 2;
     }
 
     .section-heading h2 {
@@ -823,43 +872,6 @@ footer {
 
     .btn-wrapper {
         padding-top: 32px;
-    }
-
-    .hero-section {
-        height: 515px;
-    }
-
-    .hero-text {
-        display: block;
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        width: 40%;
-        z-index: 5;
-    }
-
-    .hero-badge {
-        position: absolute;
-        top: 35%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-    }
-
-    .hero-title {
-        font-family: var(--h2);
-        font-size: var(--h2-desktop);
-        color: var(--secondary-brown);
-        margin-bottom: 28px;
-        font-weight: 700;
-    }
-
-    .hero-description {
-        font-family: var(--p);
-        font-size: var(--l-mobile);
-        color: var(--secondary-brown);
-        font-weight: 500;
-        line-height: 110%;
     }
 
     footer {
