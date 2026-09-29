@@ -252,11 +252,10 @@ main {
     display: none;
     /* Mobilde gizli kalma kuralı korundu */
     position: absolute;
-    top: 27%;
     /* Yukarıdan hizalama ölçüsü */
-    left: 7%;
+    left: 3%;
     /* Soldan hizalama ölçüsü */
-    width: 28%;
+    width: 30%;
     /* Genişlik ölçüsü */
     z-index: 5;
     /* z-index: 2 değeri, sarı şeklin (z-index: 1) üstüne çıkması için 5 yapıldı */
