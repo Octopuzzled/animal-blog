@@ -1,28 +1,5 @@
 
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    background-color: var(--secondary-light);
-    font-family: var(--p);
-    color: var(--secondary-brown);
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
 .content-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -342,18 +319,6 @@ h1.main-title {
         display: inline;
     }
 
-
-    .cta-arrow {
-        display: block;
-        position: absolute;
-        top: -45px;
-        left: -125px;
-        width: 60px;
-
-        height: auto;
-        z-index: 2;
-    }
-
     .share-links-text {
         align-items: flex-start;
     }
@@ -382,85 +347,14 @@ h1.main-title {
         text-align: left;
     }
 
-    .yellow-footer {
-        display: none;
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: flex-start;
-        gap: 60px;
-        margin: 0 auto;
-    }
-
-    .main-nav {
-        display: flex;
-        list-style: none;
-        gap: 40px;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .main-nav li {
-        position: relative;
-    }
-
-    .main-nav li a {
-        color: var(--secondary-light);
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 700;
-        display: block;
-        padding-bottom: 1px;
-    }
-
-    .nav-hover-image {
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        opacity: 0;
-        transition:
-            opacity 0.2s ease,
-            bottom 0.2s ease;
-        pointer-events: none;
-    }
-
-    .main-nav li:hover .nav-hover-image {
-        opacity: 1;
-        bottom: -8px;
-    }
-
-
-    .site-footer {
-        align-self: stretch;
-    }
-
-    .green-footer {
-        padding: 28px 40px 18px;
-    }
-
-    .footer-content {
-
-        align-items: center;
-
-    }
+   
 }
 
 
 
 @media (min-width: 1200px) {
 
-    .content-wrapper {
-        margin: 0 auto;
-        max-width: 1440px;
-        
-    }
-
+  
     .desktop-row-top,
     .desktop-row-bottom {
         align-items: flex-start;
@@ -516,17 +410,3 @@ h1.main-title {
     }
 }
 
-
-@keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-}
