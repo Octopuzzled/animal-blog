@@ -187,7 +187,7 @@ h1.main-title {
 .cta-interactive-container>img {
     display: flex;
     position: relative;
-    left: -20px:
+    left: -20px; /* gestylt */
 }
 
 .share-btn {
