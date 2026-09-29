@@ -38,7 +38,7 @@ h1.main-title {
     color: var(--secondary-brown);
     line-height: 1.6;
     text-align: left;
-    font-family: var(--h2);
+    font-family: "Palanquin", sans-serif;
     font-weight: 400;
 }
 
@@ -133,7 +133,7 @@ h3 {
     line-height: 1.6;
     text-align: center;
     padding-inline: 8px;
-    font-family: var(--h2);
+    font-family: "Palanquin", sans-serif;
     font-weight: 400;
 }
 
@@ -159,7 +159,7 @@ h3 {
     color: var(--secondary-grey);
     line-height: 1.6;
     text-align: left;
-    font-family: var(--h2);
+    font-family: "Palanquin", sans-serif;
     font-weight: 400;
 }
 
@@ -285,6 +285,7 @@ h3 {
     color: var(--primary-green);
     font-family: var(--h2);
     font-size: 16px;
+    font-family: "Palanquin", sans-serif;
     font-weight: 700;
     text-decoration: underline;
     white-space: nowrap;
