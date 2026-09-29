@@ -368,6 +368,8 @@ main {
     cursor: pointer;
 
     margin-bottom: 20px;
+
+    transition: all 0.3s ease;
 }
 
 .slider input:checked {
@@ -383,7 +385,7 @@ main {
     position: absolute;
     display: flex;
 
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
 }
 
 .slider-element {
