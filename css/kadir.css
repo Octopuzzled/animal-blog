@@ -42,6 +42,10 @@ h1.main-title {
     font-weight: 400;
 }
 
+.chart-desc-top {
+    font-family: var(--h2);
+    font-weight: 400;
+}
 
 /* ==========================================================
    4. BLOG META
