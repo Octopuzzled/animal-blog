@@ -122,13 +122,18 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
-    margin-inline: var(--spacing-md);
+    padding-inline: max(16px, calc(50% - 720px));
 
     display: flex;
     flex-direction: column;
-
-    max-width: 1440px;
+    flex: 1;
 }
 
 /* ==========================================================
@@ -205,7 +210,6 @@ main {
     position: relative;
     height: 300px;
     /* Mobilde çok yüksek olmaması için düşürüldü */
-    margin-inline: auto;
     overflow: hidden;
     background-color: #f4f4f4;
     /* Resim yüklenene kadar görünürlük testi için gri arka plan */
@@ -364,6 +368,8 @@ main {
     cursor: pointer;
 
     margin-bottom: 20px;
+
+    transition: all 0.3s ease;
 }
 
 .slider input:checked {
@@ -379,7 +385,7 @@ main {
     position: absolute;
     display: flex;
 
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
 }
 
 .slider-element {
@@ -702,7 +708,7 @@ footer {
 
 @media (min-width: 788px) {
     main {
-        padding-inline: 120px;
+        padding-inline: max(120px, calc(50% - 720px));
     }
 
     .section-heading h2 {
@@ -906,27 +912,22 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    main {
-        max-width: 1440px;
-        margin-inline: auto;
-    }
-
     .form-neighours {
         display: flex;
         gap: 100px;
     }
 
-    .form-neighours div {
+    .form-neighbours div {
         width: 50%;
     }
 
     @media (min-width: 1440px) {
         .site-header {
-            padding: 7px calc(50% - 600px);
+            padding: 7px calc(50% - 720px);
         }
 
         .green-footer {
-            padding: 60px calc(50% - 600px);
+            padding: 60px calc(50% - 720px);
         }
     }
 }
