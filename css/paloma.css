@@ -1,5 +1,4 @@
-p,
-article {
+p, li {
     font-family: var(--p);
     color: var(--secondary-brown);
     line-height: 130%;
@@ -90,7 +89,7 @@ main {
     padding-block: 10px;
 }
 
-.main-article article {
+.main-article p {
     padding-bottom: 10px;
 }
 
