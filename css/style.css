@@ -211,7 +211,6 @@ main {
     height: 300px;
     /* Mobilde çok yüksek olmaması için düşürüldü */
     overflow: hidden;
-    background-color: #f4f4f4;
     /* Resim yüklenene kadar görünürlük testi için gri arka plan */
 }
 
@@ -221,6 +220,7 @@ main {
     background: url("../assets/images/cat-landing.jpg") center / cover no-repeat;
     /* Yol güncellendi */
     z-index: 1;
+    height: 98%;
 }
 
 .hero-badge {
