@@ -1,5 +1,3 @@
-
-
 .content-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -185,9 +183,11 @@ h1.main-title {
     align-items: center;
     position: relative;
 }
-.cta-interactive-container img {
+
+.cta-interactive-container>img {
     display: flex;
     position: relative;
+    left: -20px:
 }
 
 .share-btn {
@@ -349,14 +349,14 @@ h1.main-title {
         text-align: left;
     }
 
-   
+
 }
 
 
 
 @media (min-width: 1200px) {
 
-  
+
     .desktop-row-top,
     .desktop-row-bottom {
         align-items: flex-start;
@@ -411,4 +411,3 @@ h1.main-title {
         margin: 0;
     }
 }
-
